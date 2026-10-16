@@ -3,305 +3,727 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>3Lance Recruitment Solutions | Health, Social Care &amp; Education Recruitment UK</title>
-<meta name="description" content="3Lance Recruitment Solutions provides staffing for health, social care and education across the UK. Find a job, register as a candidate or request staff.">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Figtree:wght@400;500;600&display=swap">
+<link rel="icon" href="img/icon.png">
+<link rel="canonical" href="https://3lancerecruitment.uk/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="3Lance Recruitment Solutions">
+<meta property="og:title" content="3Lance Recruitment Solutions | People. Purpose. Possibilities.">
+<meta property="og:description" content="Specialist recruitment for education, health and social care across the UK.">
+<meta property="og:url" content="https://3lancerecruitment.uk/">
+<meta property="og:image" content="https://3lancerecruitment.uk/img/share.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0B7A77">
+<title>3Lance Recruitment Solutions</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="3Lance Recruitment Solutions: People. Purpose. Possibilities. Specialist recruitment of compliance-checked staff for education, health and social care providers across the UK.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap">
 <style>
-:root{--bg:#fbfdfd;--card:#fff;--ink:#0a2a33;--text:#46606a;--teal:#12b3b0;--tealD:#0b7f7d;--coral:#e8453c;--orange:#f07f1e;--lime:#c5c920;--mint:#e9f7f6;--line:#dbe8ea;--hero:#06232b;
-box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#071a21;--card:#0d2630;--ink:#eaf4f6;--text:#a8bfc7;--tealD:#4fd6d2;--mint:#0d2f35;--line:#1e3b46;--hero:#04151b}}
-:root[data-theme="dark"]{--bg:#071a21;--card:#0d2630;--ink:#eaf4f6;--text:#a8bfc7;--tealD:#4fd6d2;--mint:#0d2f35;--line:#1e3b46;--hero:#04151b}
-*,*::before,*::after{box-sizing:inherit}
-html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 84px)}
-body{margin:0;background:var(--bg);color:var(--text);font:400 17px/1.7 Figtree,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
-h1,h2{font-family:'Instrument Serif',Georgia,serif;font-weight:400;color:var(--ink);line-height:1.04;margin:0;letter-spacing:-.01em}
-h2{font-size:clamp(2.4rem,5vw,3.8rem)}
-h3{font:600 1.15rem/1.3 Figtree,sans-serif;color:var(--ink);margin:0}
-h4{margin:14px 0 4px;color:var(--ink);font-size:.95rem}
-p{margin:0 0 1em;max-width:62ch}a{color:inherit}
-:focus-visible{outline:3px solid var(--orange);outline-offset:3px;border-radius:8px}
-.wrap{width:min(1180px,100% - 44px);margin-inline:auto}
-section{padding:clamp(64px,9vw,120px) 0}
-header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
-.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:76px}
-.logo img{height:48px;width:auto;display:block;background:#fff;border-radius:10px;padding:3px 8px}
-nav{display:flex;align-items:center;gap:24px;font-weight:500;font-size:.97rem}
-nav a{text-decoration:none;color:var(--ink)}nav a:not(.btn):hover{color:var(--tealD)}
-.btn{display:inline-block;border:0;cursor:pointer;font:600 1rem Figtree,sans-serif;padding:14px 28px;border-radius:999px;text-decoration:none;background:var(--coral);color:#fff;box-shadow:0 8px 20px -8px rgba(232,69,60,.6);transition:transform .18s,box-shadow .18s}
-.btn:hover{transform:translateY(-2px);box-shadow:0 12px 24px -8px rgba(232,69,60,.6)}
-.btn.teal{background:var(--teal);color:#032a2d;box-shadow:0 8px 20px -8px rgba(18,179,176,.7)}
-.btn.line{background:transparent;color:inherit;border:2px solid currentColor;box-shadow:none}
-nav .btn{padding:10px 20px;color:#fff}nav .btn.teal{color:#032a2d}
-#menuBtn{display:none;background:none;border:2px solid var(--line);color:var(--ink);border-radius:12px;padding:9px 14px;font:600 .95rem Figtree}
-@media(max-width:1020px){#menuBtn{display:block}nav{display:none;position:absolute;left:0;right:0;top:100%;flex-direction:column;align-items:stretch;gap:0;background:var(--bg);border-bottom:1px solid var(--line);padding:8px 22px 20px}nav.open{display:flex}nav a{padding:12px 0}nav .btn{text-align:center;margin-top:8px}}
+/* Layout: white, airy pages; one brand teal taken from the "LANCE" lettering; the logo's four colours appear only as a thin stripe in the header and footer. */
+:root{
+ --brand:#10B0AC;        /* LANCE teal: accents, icons, focus */
+ --brand-ink:#0B7A77;    /* darker teal for text links */
+ --btn:#0B7A77;--btn-fg:#FFFFFF;--btn-hover:#09625F;
+ --deep:#06363A;         /* dark sections: video band, footer */
+ --bg:#FFFFFF;--card:#FFFFFF;--tint:#EEF8F7;--soft:#F7FBFB;
+ --ink:#0D2B2E;--text:#47595C;--muted:#6A7D7F;--line:#DCE8E8;
+ --stripe:linear-gradient(90deg,#C5C920 0 25%,#E86810 25% 50%,#E83838 50% 75%,#10B0AC 75%);
+ --font:'Figtree',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+ --r:20px;--r-lg:28px;
+ --shadow:0 20px 44px -30px rgba(6,54,58,.38);
+ --gut-l:max(20px,env(safe-area-inset-left,0px));--gut-r:max(20px,env(safe-area-inset-right,0px));
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+ --brand:#2CC4BF;--brand-ink:#5ED6D2;--btn:#2CC4BF;--btn-fg:#03201F;--btn-hover:#5ED6D2;--deep:#042A2D;
+ --bg:#0A1A1C;--card:#102527;--tint:#0F2A2C;--soft:#0D2123;--ink:#E9F4F3;--text:#A9BFBF;--muted:#89A2A2;--line:#1E3638;
+ --shadow:0 20px 44px -30px rgba(0,0,0,.7);color-scheme:dark}}
+:root[data-theme="dark"]{
+ --brand:#2CC4BF;--brand-ink:#5ED6D2;--btn:#2CC4BF;--btn-fg:#03201F;--btn-hover:#5ED6D2;--deep:#042A2D;
+ --bg:#0A1A1C;--card:#102527;--tint:#0F2A2C;--soft:#0D2123;--ink:#E9F4F3;--text:#A9BFBF;--muted:#89A2A2;--line:#1E3638;
+ --shadow:0 20px 44px -30px rgba(0,0,0,.7);color-scheme:dark}
+
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 96px);-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:400 17px/1.65 var(--font);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3,h4{font-family:var(--font);color:var(--ink);margin:0;text-wrap:balance}
+h1{font-size:clamp(2.35rem,4.6vw,3.9rem);font-weight:800;line-height:1.05;letter-spacing:-.03em}
+h2{font-size:clamp(1.8rem,3.1vw,2.6rem);font-weight:800;line-height:1.12;letter-spacing:-.025em}
+h3{font-size:1.2rem;font-weight:700;line-height:1.3;letter-spacing:-.01em}
+h4{font-size:1rem;font-weight:700}
+p{margin:0 0 1em;max-width:64ch}
+a{color:var(--brand-ink)}
+img,video{max-width:100%}
+:focus-visible{outline:3px solid var(--brand);outline-offset:3px;border-radius:8px}
+.wrap{width:100%;max-width:1200px;margin-inline:auto;padding-left:var(--gut-l);padding-right:var(--gut-r)}
+section{padding-block:clamp(60px,8vw,104px)}
+.tint{background:var(--tint)}
+.soft{background:var(--soft)}
+.eyebrow{display:block;font-size:.8rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--brand-ink);margin-bottom:14px}
+.intro{font-size:1.12rem;margin-top:16px;color:var(--text)}
+.head{max-width:720px;margin-bottom:clamp(30px,4vw,48px)}
+.head.center{margin-inline:auto;text-align:center}.head.center p{margin-inline:auto}
+.split-head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;margin-bottom:clamp(30px,4vw,44px)}
+.split-head .head{margin-bottom:0}
+
+/* buttons: one style family, one colour */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:12px 24px;border-radius:999px;border:2px solid var(--btn);background:var(--btn);color:var(--btn-fg);font:700 1rem/1.2 var(--font);text-decoration:none;cursor:pointer;transition:background .2s,border-color .2s,color .2s,transform .2s;white-space:nowrap}
+.btn:hover{background:var(--btn-hover);border-color:var(--btn-hover)}
+.btn:active{transform:translateY(1px)}
+.btn.teal,.btn.or{background:var(--btn);border-color:var(--btn);color:var(--btn-fg)}
+.btn.line{background:transparent;color:var(--ink)!important;border-color:var(--line)}
+.btn.line:hover{border-color:var(--brand);color:var(--brand-ink)!important;background:transparent}
+.btn.light{background:#fff;border-color:#fff;color:#06363A}
+.btn.light:hover{background:#E6F6F5;border-color:#E6F6F5}
+.btn.ghost{background:transparent;border-color:rgba(255,255,255,.6);color:#fff!important}
+.btn.ghost:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+.btn.sm{min-height:42px;padding:9px 18px;font-size:.95rem}
+.cta{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.tlink{font-weight:700;color:var(--brand-ink);text-decoration:none;display:inline-flex;gap:6px;align-items:center}
+.tlink:hover{text-decoration:underline;text-underline-offset:4px}
+
+/* header */
+header{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--bg) 94%,transparent);backdrop-filter:saturate(1.4) blur(12px);-webkit-backdrop-filter:saturate(1.4) blur(12px);padding-top:env(safe-area-inset-top,0px);border-bottom:1px solid var(--line)}
+.stripe{display:block;height:4px;background:var(--stripe)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:76px}
+.logo{display:inline-flex;align-items:center;flex:none}
+.logo img{height:46px;width:auto;display:block;background:#fff;border-radius:10px;padding:4px 6px}
+nav{display:flex;align-items:center;gap:clamp(16px,2.2vw,30px)}
+nav .links{display:flex;align-items:center;gap:clamp(14px,2vw,28px)}
+nav .links a{color:var(--ink);text-decoration:none;font-weight:600;font-size:.97rem;padding:8px 0;position:relative}
+nav .links a::after{content:"";position:absolute;left:0;right:0;bottom:2px;height:2px;border-radius:2px;background:var(--brand);transform:scaleX(0);transform-origin:left;transition:transform .2s}
+nav .links a:hover::after,nav .links a[aria-current="page"]::after{transform:scaleX(1)}
+nav .acts{display:flex;gap:10px}
+nav .mo{display:none}
+#menuBtn{display:none;align-items:center;gap:8px;min-height:44px;padding:8px 16px;border-radius:999px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);font:700 .95rem var(--font);cursor:pointer}
+#menuBtn i{display:block;width:18px;height:2px;background:currentColor;border-radius:2px;box-shadow:0 -6px 0 currentColor,0 6px 0 currentColor;margin:6px 0}
+@media(max-width:1020px){
+ header{background:var(--bg);backdrop-filter:none;-webkit-backdrop-filter:none}
+ #menuBtn{display:inline-flex}
+ nav{display:none;position:fixed;left:0;right:0;bottom:0;top:calc(81px + env(safe-area-inset-top,0px));flex-direction:column;align-items:stretch;gap:24px;background:var(--bg);padding:16px var(--gut-r) calc(28px + env(safe-area-inset-bottom,0px)) var(--gut-l);overflow:auto;z-index:40}
+ nav.open{display:flex}
+ nav .links{flex-direction:column;align-items:stretch;gap:0}
+ nav .links a{font-size:1.35rem;font-weight:700;padding:16px 2px;border-bottom:1px solid var(--line)}
+ nav .links a::after{display:none}
+ nav .mo{display:block}
+ nav .acts .mo{display:inline-flex}
+ nav .acts{flex-direction:column}
+ nav .acts .btn{width:100%}
+}
+
 /* hero */
-.hero{background:radial-gradient(120% 90% at 85% 10%,#0e4a50 0,var(--hero) 60%);color:#d8ebed;position:relative;overflow:hidden;padding:clamp(80px,12vw,160px) 0 clamp(70px,9vw,120px)}
-.hero .wrap{position:relative;z-index:1}
-.hero h1{color:#fff;font-size:clamp(3.2rem,8vw,6.6rem);max-width:11ch;line-height:1}
-.hero p.lead{font-size:1.22rem;margin:28px 0 38px;max-width:46ch;color:#cfe5e7}
-.cta{display:flex;gap:12px;flex-wrap:wrap}
-.hero .line{color:#fff}
-.trust{margin:56px 0 0;padding-top:24px;border-top:1px solid rgba(255,255,255,.18);font-size:.98rem;color:#9fc3c8;max-width:60ch}
-.gem{position:absolute;z-index:0;right:max(-150px,-9vw);top:50%;width:min(580px,50vw);aspect-ratio:1;transform:translateY(-50%) rotate(45deg);border-radius:44px;overflow:hidden;display:flex;box-shadow:0 40px 90px -30px rgba(0,0,0,.6);animation:gem 1.4s cubic-bezier(.2,.7,.2,1) both}
-.gem i{flex:1}.gem i:nth-child(1){background:var(--lime)}.gem i:nth-child(2){background:var(--orange)}.gem i:nth-child(3){background:var(--coral)}.gem i:nth-child(4){background:var(--teal)}
-.gem::after{content:"";position:absolute;inset:26px;border:2px solid rgba(255,255,255,.4);border-radius:26px}
-@keyframes gem{from{opacity:0;transform:translateY(-50%) rotate(20deg) scale(.88)}to{opacity:1;transform:translateY(-50%) rotate(45deg) scale(1)}}
-@media(prefers-reduced-motion:reduce){.gem{animation:none}html{scroll-behavior:auto}}
-@media(max-width:860px){.gem{width:80vw;right:-38vw;opacity:.4}}
-/* layout */
-.grid{display:grid;gap:24px}.g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
-@media(max-width:860px){.g2{grid-template-columns:1fr}}
-.card{background:var(--card);border:1px solid var(--line);border-radius:28px;padding:clamp(28px,4vw,48px);box-shadow:0 24px 50px -36px rgba(6,35,43,.35)}
-.card.dark{background:linear-gradient(160deg,#0e4a50,var(--hero));color:#d4e9eb;border-color:transparent}.card.dark h3{color:#fff}
-.tags{display:flex;flex-wrap:wrap;gap:10px;list-style:none;margin:20px 0 0;padding:0}
-.tags li{background:var(--mint);color:var(--ink);padding:8px 16px;border-radius:999px;font-weight:500;font-size:.94rem}
-.card.dark .tags li{background:rgba(255,255,255,.12);color:#fff}
-.ticks{list-style:none;padding:0;margin:28px 0 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
-.ticks li{display:flex;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px 20px}
-.ticks li::before{content:"";flex:none;width:24px;height:24px;margin-top:2px;border-radius:50%;background:var(--teal) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 12.5l4 4 8-9'/%3E%3C/svg%3E") center/70% no-repeat}
-.intro{font-size:1.15rem;margin-top:16px}
+.hero{background:var(--soft);padding-block:clamp(40px,6vw,84px)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(32px,5vw,72px);align-items:center}
+.hero .lead{font-size:clamp(1.08rem,1.4vw,1.22rem);margin:22px 0 30px;max-width:48ch}
+.hero .cta{margin-bottom:30px}
+.facts{list-style:none;margin:0;padding:22px 0 0;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:12px 26px;font-size:.95rem;font-weight:600;color:var(--ink)}
+.facts li{display:flex;align-items:center;gap:9px}
+.facts li::before,.ticks li::before{content:"";flex:none;width:20px;height:20px;border-radius:50%;background:var(--brand) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 12.5l4 4 8-9'/%3E%3C/svg%3E") center/68% no-repeat}
+.hero-media{position:relative;margin:0;border-radius:var(--r-lg);overflow:hidden;aspect-ratio:4/5;max-height:620px;width:100%;justify-self:end;background:var(--tint);box-shadow:var(--shadow)}
+.hero-media video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.badge{position:absolute;left:18px;bottom:18px;right:18px;display:flex;align-items:center;gap:12px;background:var(--card);color:var(--ink);border-radius:16px;padding:14px 16px;font-size:.92rem;font-weight:600;line-height:1.35;box-shadow:var(--shadow);max-width:340px}
+.badge b{display:grid;place-items:center;flex:none;width:40px;height:40px;border-radius:12px;background:var(--tint);color:var(--brand-ink);font-size:.8rem;font-weight:800;letter-spacing:.04em}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr}.hero-media{justify-self:stretch;aspect-ratio:4/3;max-height:none}}
+@media(max-width:520px){.hero-media{aspect-ratio:1}.hero .cta .btn{flex:1 1 100%}}
+
+/* cards */
+.grid{display:grid;gap:clamp(16px,2vw,24px)}
+.g2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.g3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.g4{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media(max-width:1000px){.g4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:780px){.g3{grid-template-columns:1fr}}
+@media(max-width:700px){.g2,.g3{grid-template-columns:1fr}}
+@media(max-width:520px){.g4{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:clamp(24px,3vw,36px);min-width:0}
+.card.pic{padding:0;overflow:hidden;display:flex;flex-direction:column}
+.card.pic>img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+.card.pic .body{padding:22px 24px 26px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card.pic .body p{margin:0;font-size:.98rem}
+.card.pic .body .tlink{margin-top:auto;padding-top:8px}
+a.card{text-decoration:none;color:inherit;transition:transform .25s,box-shadow .25s,border-color .25s}
+a.card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:transparent}
+a.card:hover img{filter:saturate(1.08)}
+.card h3+p,.card h3+ol,.card h3+ul{margin-top:12px}
+
+/* how it works */
+.how .card.pic>img{aspect-ratio:16/9}
+.steps{counter-reset:s;list-style:none;padding:0;margin:16px 0 0;display:grid;gap:14px}
+.steps li{counter-increment:s;position:relative;padding-left:46px;font-size:.98rem}
+.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:32px;height:32px;border-radius:50%;background:var(--tint);color:var(--brand-ink);font-weight:800;font-size:.9rem;display:grid;place-items:center}
+.steps b{color:var(--ink)}
+.steps small{display:block;color:var(--text)}
+
+/* video band */
+.vband{position:relative;overflow:hidden;background:var(--deep);color:#fff;padding-block:clamp(90px,13vw,170px)}
+.vband video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.vband::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(4,38,41,.92),rgba(4,38,41,.6) 55%,rgba(4,38,41,.35))}
+.vband .wrap{position:relative;z-index:2}
+.vband .eyebrow{color:#8FE3E0}
+.vq{font-size:clamp(1.9rem,4vw,3.2rem);font-weight:800;line-height:1.1;letter-spacing:-.025em;color:#fff;max-width:20ch;margin:0 0 30px}
+
+/* gallery */
+.gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(10px,1.4vw,16px)}
+.gallery figure{position:relative;margin:0;border-radius:16px;overflow:hidden;aspect-ratio:1;background:var(--tint)}
+.gallery img,.gallery video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.gallery figure:hover img{transform:scale(1.04)}
+.gallery figcaption{position:absolute;left:10px;bottom:10px;background:var(--card);color:var(--ink);font-size:.82rem;font-weight:700;padding:5px 12px;border-radius:999px}
+@media(max-width:800px){.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.gallery figure{aspect-ratio:4/5}
+
+/* call-to-action panels */
+.panels{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(16px,2vw,24px)}
+@media(max-width:760px){.panels{grid-template-columns:1fr}}
+.panel{position:relative;isolation:isolate;overflow:hidden;border-radius:var(--r-lg);min-height:380px;display:flex;align-items:flex-end;padding:clamp(24px,3.4vw,40px);color:#fff;background:var(--deep)}
+.panel img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.panel::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(4,38,41,.05) 20%,rgba(4,38,41,.88) 78%)}
+.panel h3{color:#fff;font-size:clamp(1.5rem,2.4vw,1.9rem);font-weight:800;letter-spacing:-.02em}
+.panel p{color:#E2F1F1;margin:10px 0 20px;max-width:42ch}
+
+/* register band */
+.register{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(24px,4vw,56px);align-items:center}
+@media(max-width:860px){.register{grid-template-columns:1fr}}
+.register h2{font-size:clamp(1.6rem,2.6vw,2.2rem)}
+.register p{margin:12px 0 0}
+#qf{display:flex;flex-wrap:wrap;gap:10px}
+#qf input{flex:1 1 200px;min-width:0}
+input,select,textarea{font:inherit;color:var(--ink);background:var(--card);border:1.5px solid var(--line);border-radius:14px;padding:12px 16px;min-height:50px;width:100%}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--brand);box-shadow:0 0 0 3px color-mix(in srgb,var(--brand) 22%,transparent)}
+
+/* page heads + split layouts */
+.page-head{background:var(--soft);padding-block:clamp(48px,7vw,88px)}
+.split{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(32px,6vw,80px);align-items:center}
+.split>div{min-width:0}
+@media(max-width:860px){.split{grid-template-columns:1fr}}
+.photo{margin:0;border-radius:var(--r-lg);overflow:hidden;background:var(--tint);box-shadow:var(--shadow)}
+.photo img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
+@media(max-width:860px){.photo img{aspect-ratio:4/3}}
+.strip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(10px,1.4vw,16px)}
+.strip img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:16px}
+@media(max-width:640px){.strip{grid-template-columns:1fr 1fr}.strip img:last-child{grid-column:1/-1;aspect-ratio:16/9}}
+.banner-img{display:block;width:100%;height:auto;aspect-ratio:21/9;object-fit:cover;border-radius:var(--r-lg);margin-top:28px}
+@media(max-width:640px){.banner-img{aspect-ratio:4/3}}
+.collage{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:clamp(130px,15vw,210px);gap:clamp(10px,1.4vw,16px);margin-top:36px}
+.collage figure{margin:0;border-radius:16px;overflow:hidden;background:var(--tint)}
+.collage .big{grid-column:span 2;grid-row:span 2}
+.collage img,.collage video{display:block;width:100%;height:100%;object-fit:cover}
+@media(max-width:700px){.collage{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.statement{font-size:clamp(1.4rem,2.4vw,1.9rem);font-weight:700;line-height:1.3;letter-spacing:-.015em;color:var(--ink);max-width:30ch;margin-top:18px}
+.ticks{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:14px 32px}
+.ticks li{display:flex;gap:12px;align-items:flex-start;font-weight:500;color:var(--ink)}
+.ticks li::before{margin-top:3px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:18px 0 0;padding:0}
+.tags li{background:var(--tint);color:var(--ink);padding:7px 14px;border-radius:999px;font-weight:600;font-size:.92rem}
+
 /* jobs */
-#jobs{background:var(--mint)}
-.search{display:grid;grid-template-columns:2fr 1fr 1fr auto auto;gap:10px;margin:32px 0 8px;background:var(--card);padding:14px;border-radius:24px;box-shadow:0 24px 50px -30px rgba(6,35,43,.4)}
-.search input,.search select,.f input,.f select,.f textarea{width:100%;font:inherit;color:var(--ink);background:var(--bg);border:2px solid var(--line);border-radius:14px;padding:12px 16px;min-height:50px}
-.search input:focus,.search select:focus,.f input:focus,.f select:focus,.f textarea:focus{border-color:var(--teal);outline:none}
+.search{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr) minmax(0,1fr) auto auto;gap:10px;background:var(--card);border:1px solid var(--line);padding:12px;border-radius:var(--r);box-shadow:var(--shadow)}
 @media(max-width:900px){.search{grid-template-columns:1fr 1fr}.search input{grid-column:1/-1}}
-.banner{font-size:.92rem;background:#fff3d6;color:#5a4300;border-radius:12px;padding:10px 16px;margin:14px 0 0;max-width:none}
-#count{margin:24px 0 14px;font-weight:600;color:var(--ink)}
-.job{display:flex;justify-content:space-between;gap:24px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:24px 28px;margin-bottom:16px;position:relative;overflow:hidden;transition:transform .2s,box-shadow .2s}
-.job::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--teal)}
-.job:nth-child(3n+2)::before{background:var(--orange)}.job:nth-child(3n)::before{background:var(--coral)}
-.job:hover{transform:translateY(-3px);box-shadow:0 24px 40px -28px rgba(6,35,43,.45)}
-.job h3{font-size:1.3rem;margin-bottom:8px}.meta{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:.93rem;margin-bottom:10px}
-.job p{margin:0;font-size:.98rem}.job .acts{display:flex;gap:10px;flex-shrink:0}
-@media(max-width:700px){.job{flex-direction:column;align-items:stretch}.job .acts .btn{flex:1;text-align:center}}
-.empty{background:var(--card);border:2px dashed var(--line);border-radius:22px;padding:40px 24px;text-align:center}
+.banner{font-size:.92rem;background:#FFF5DB;color:#5A4300;border-radius:12px;padding:10px 16px;margin:16px 0 0;max-width:none}
+#count{margin:26px 0 14px;font-weight:700;color:var(--ink)}
+.job{display:flex;justify-content:space-between;gap:24px;align-items:center;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--brand);border-radius:16px;padding:22px 26px;margin-bottom:14px;transition:box-shadow .2s}
+.job:hover{box-shadow:var(--shadow)}
+.job h3{font-size:1.2rem;margin-bottom:8px}.job h3 a{color:var(--ink)}
+.meta{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:.93rem;margin-bottom:10px;color:var(--muted)}
+.job p{margin:0;font-size:.97rem}.job .acts{display:flex;gap:10px;flex-shrink:0}
+@media(max-width:700px){.job{flex-direction:column;align-items:stretch}.job .acts .btn{flex:1}}
+.empty{background:var(--card);border:1.5px dashed var(--line);border-radius:var(--r);padding:40px 24px;text-align:center}
 .empty p{margin:10px auto 20px}
-details.more{margin-top:12px}details.more summary{cursor:pointer;font-weight:600;color:var(--tealD)}details.more ul{margin:6px 0 0;padding-left:20px}
-/* statement + band */
-.band{background:linear-gradient(160deg,#0e4a50,var(--hero));color:#cfe5e7}
-.band h2,.band h3{color:#fff}.band strong{color:#fff!important}
-.band .cols{display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(28px,6vw,90px);align-items:start}
-@media(max-width:860px){.band .cols{grid-template-columns:1fr}}
-.statement{font:400 clamp(1.7rem,3.4vw,2.5rem)/1.25 'Instrument Serif',Georgia,serif;color:var(--ink);max-width:28ch}
-/* modal */
-dialog{border:0;border-radius:28px;padding:0;width:min(580px,calc(100% - 28px));max-height:calc(100dvh - 28px);background:var(--card);color:var(--text)}
-dialog::backdrop{background:rgba(4,21,27,.7);backdrop-filter:blur(3px)}
-.mh{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;padding:28px 28px 0}
-.mh h2{font-size:2rem}
-.x{background:none;border:2px solid var(--line);border-radius:50%;width:42px;height:42px;font-size:1.3rem;color:var(--ink);cursor:pointer;flex:none}
-.f{padding:18px 28px 28px;display:grid;gap:14px}
+.back{display:inline-block;margin-bottom:18px;font-weight:700;text-decoration:none}
+.nm{margin:22px 0 6px}
+
+/* reviews, faq, placeholders, legal */
+.rev{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:26px;display:flex;flex-direction:column;gap:12px}
+.rev .st{color:var(--brand);letter-spacing:3px;font-size:1.1rem}.rev p{margin:0}
+.rev .who{font-weight:700;color:var(--ink)}.rev .who small{display:block;font-weight:400;color:var(--muted)}
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 22px;margin-bottom:12px}
+.faq summary{cursor:pointer;font-weight:700;color:var(--ink)}.faq details p{margin:12px 0 0}
+.ph{border:1.5px dashed var(--line);border-radius:var(--r);padding:26px;background:var(--card)}
+.ph strong{color:#B4570A}
+.prose h3{margin:28px 0 8px;font-size:1.2rem}.prose p,.prose li{max-width:72ch}
+
+/* contact */
+.pick{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:28px}
+@media(max-width:760px){.pick{grid-template-columns:1fr}}
+.pick a,.pick button{font:inherit;text-align:left;cursor:pointer;background:var(--card);border:1.5px solid var(--line);border-radius:var(--r);padding:20px 22px;color:var(--ink);text-decoration:none;font-weight:700;font-size:1.05rem;transition:border-color .2s,transform .2s}
+.pick a:hover,.pick button:hover{border-color:var(--brand);transform:translateY(-2px)}
+.pick small{display:block;font-weight:400;font-size:.94rem;color:var(--text);margin-top:4px}
+.ci{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:20px;margin:36px 0}
+.ci>div{border-top:2px solid var(--brand);padding-top:14px}
+.ci b{display:block;font-size:.8rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--brand-ink);margin-bottom:6px}
+.ci a,.ci span{font-size:clamp(1.15rem,1.8vw,1.4rem);font-weight:700;color:var(--ink);text-decoration:none;overflow-wrap:anywhere}
+
+/* footer */
+footer{background:var(--deep);color:#B7CFCF;font-size:.95rem}
+footer .stripe{height:4px}
+.fgrid{display:grid;grid-template-columns:minmax(0,1.4fr) repeat(3,minmax(0,1fr));gap:32px;padding-block:56px 36px}
+@media(max-width:900px){.fgrid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.fgrid{grid-template-columns:1fr}}
+.fgrid h4{color:#fff;margin-bottom:12px;font-size:.95rem}
+.fgrid ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.fgrid a{color:#D6E8E8;text-decoration:none}.fgrid a:hover{color:#fff;text-decoration:underline}
+.fgrid .logo img{height:44px}
+.fgrid p{margin:16px 0 0;max-width:34ch}
+.fbase{border-top:1px solid rgba(255,255,255,.12);padding-block:20px calc(20px + env(safe-area-inset-bottom,0px));display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-between;font-size:.88rem}
+.flinks{display:flex;flex-wrap:wrap;gap:8px 20px}
+.fbase a{color:#D6E8E8}
+
+/* floating CV button: appears once the visitor scrolls past the top banner */
+.floatcv{position:fixed;z-index:25;right:calc(18px + env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));box-shadow:0 14px 30px -12px rgba(0,0,0,.45);opacity:0;transform:translateY(16px);pointer-events:none;transition:opacity .25s,transform .25s}
+.floatcv.show{opacity:1;transform:none;pointer-events:auto}
+@media(max-width:700px){.floatcv{display:none}} /* phones: Upload CV stays in the menu, footer and CV drop-off instead */
+
+/* dialog */
+dialog{border:0;border-radius:24px;padding:0;width:min(580px,calc(100% - 28px));max-height:calc(100dvh - 28px);background:var(--card);color:var(--text)}
+dialog::backdrop{background:rgba(4,30,33,.66);backdrop-filter:blur(3px)}
+.mh{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;padding:26px 26px 0}
+.mh h2{font-size:1.6rem}
+.x{background:none;border:1.5px solid var(--line);border-radius:50%;width:42px;height:42px;font-size:1.3rem;color:var(--ink);cursor:pointer;flex:none}
+.f{padding:18px 26px 26px;display:grid;gap:14px}
 .f label{font-weight:600;color:var(--ink);font-size:.95rem;display:grid;gap:6px}
 .f .chk{display:flex;gap:10px;align-items:flex-start;font-weight:400}.f .chk input{width:22px;min-height:22px;margin-top:3px}
-.note{font-size:.9rem;background:var(--mint);color:var(--ink);border-radius:14px;padding:12px 16px;max-width:none;margin:0}
-.ph{border:2px dashed var(--line);border-radius:22px;padding:28px;background:var(--card)}
-.ph strong{color:var(--coral)}
-#contact{background:var(--hero);color:#cfe5e7;background:radial-gradient(100% 120% at 10% 0,#0e4a50 0,var(--hero) 65%)}#contact h2{color:#fff}
-.ci{display:grid;gap:22px;margin:34px 0;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
-.ci b{color:var(--lime);display:block;font-size:.9rem;font-weight:600;margin-bottom:2px}
-.ci a,.ci div{font:400 clamp(1.4rem,2.6vw,1.9rem)/1.2 'Instrument Serif',Georgia,serif;color:#fff;text-decoration:none;overflow-wrap:anywhere}
-.ci b{font-family:Figtree}
-footer{background:var(--hero);color:#8fb0b8;padding:28px 0;font-size:.9rem;border-top:1px solid rgba(255,255,255,.1)}
-/* ===== colour + menu refresh ===== */
-:root{--t-teal:#e1f6f5;--t-orange:#fff0e0;--t-coral:#ffe8e5;--t-lime:#f4f6cf;--bar:linear-gradient(90deg,#c5c920 0 25%,#f07f1e 25% 50%,#e8453c 50% 75%,#12b3b0 75%)}
-@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--t-teal:#0d3036;--t-orange:#3a2814;--t-coral:#3a1c1b;--t-lime:#2d3213}}
-:root[data-theme="dark"]{--t-teal:#0d3036;--t-orange:#3a2814;--t-coral:#3a1c1b;--t-lime:#2d3213}
-.stripe{display:block;height:5px;background:var(--bar)}
-header{padding-bottom:0}
-.bar{min-height:80px}
-nav{gap:30px}
-nav a:not(.btn){position:relative;padding:8px 0;font-weight:600;font-size:.96rem}
-nav a:not(.btn)::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;border-radius:3px;background:var(--c,var(--teal));transform:scaleX(0);transform-origin:left;transition:transform .25s}
-nav a:not(.btn):hover::after,nav a:not(.btn):focus-visible::after{transform:scaleX(1)}
-nav a:not(.btn):hover{color:var(--ink)}
-nav .mo{display:none}
-nav .btn{padding:11px 22px}
-#menuBtn{background:var(--ink);color:var(--bg);border:0;border-radius:999px;padding:11px 20px;font-weight:600}
-@media(max-width:1020px){
- nav{position:fixed;inset:0;top:calc(85px + env(safe-area-inset-top,0px));display:none;background:var(--bg);padding:20px 24px calc(30px + env(safe-area-inset-bottom,0px));overflow:auto;border:0;gap:0;z-index:30}
- nav.open{display:flex}
- nav .mo{display:block}
- nav a:not(.btn){font:400 2.1rem/1.1 'Instrument Serif',Georgia,serif;padding:15px 0 15px 22px;border-bottom:1px solid var(--line)}
- nav a:not(.btn)::after{inset:14px auto 14px 0;width:6px;height:auto;transform:scaleY(1);background:var(--c,var(--teal));border-radius:6px}
- nav .btn{font-size:1.1rem;padding:16px;margin-top:14px}
-}
-/* colour */
-.btn.or{background:var(--orange);color:#fff;box-shadow:0 8px 20px -8px rgba(240,127,30,.7)}
-h2::after{content:"";display:block;width:92px;height:6px;border-radius:6px;margin-top:20px;background:var(--bar)}
-.hero h2::after{display:none}
-.hero .dot{position:absolute;z-index:0;width:46px;height:46px;border-radius:10px;transform:rotate(45deg);opacity:.9}
-.hero .dot:nth-of-type(1){background:var(--coral);left:46%;top:14%}.hero .dot:nth-of-type(2){background:var(--lime);left:6%;bottom:12%;width:30px;height:30px}.hero .dot:nth-of-type(3){background:var(--orange);left:55%;bottom:10%;width:28px;height:28px}
-@media(max-width:860px){.hero .dot{display:none}}
-.tags li:nth-child(4n+1){background:var(--t-teal)}.tags li:nth-child(4n+2){background:var(--t-orange)}.tags li:nth-child(4n+3){background:var(--t-coral)}.tags li:nth-child(4n+4){background:var(--t-lime)}
-.card.c1{border-top:8px solid var(--teal)}.card.c2{border-top:8px solid var(--coral)}
-.ticks li:nth-child(4n+2)::before{background-color:var(--orange)}.ticks li:nth-child(4n+3)::before{background-color:var(--coral)}.ticks li:nth-child(4n+4)::before{background-color:var(--lime)}
-.ticks li:nth-child(4n+1){background:var(--t-teal)}.ticks li:nth-child(4n+2){background:var(--t-orange)}.ticks li:nth-child(4n+3){background:var(--t-coral)}.ticks li:nth-child(4n+4){background:var(--t-lime)}
-.ticks li{border:0}
-.warm{background:var(--t-orange)}
-#jobs{background:var(--t-teal)}
-.band{background:linear-gradient(135deg,#0a8584,#064f55);border-top:8px solid;border-image:var(--bar) 1}
-.band p{color:#effafa}.band .btn.line{color:#fff}
-#contact{border-top:8px solid;border-image:var(--bar) 1}
-.ph:nth-child(1){border-top:6px solid var(--teal)}.ph:nth-child(2){border-top:6px solid var(--orange)}.ph:nth-child(3){border-top:6px solid var(--coral)}
-.ph{border-style:solid;border-width:1px}
-.job::before{width:8px}
-/* ===== pages ===== */
+.note{font-size:.9rem;background:var(--tint);color:var(--ink);border-radius:12px;padding:12px 16px;max-width:none;margin:0}
+
+/* tagline dots: the only other place the logo's colours appear */
+.tagline{display:flex;flex-wrap:wrap;align-items:center;gap:6px 18px;margin:0 0 18px;font-weight:800;font-size:clamp(.95rem,1.2vw,1.05rem);letter-spacing:.01em;color:var(--ink)}
+.tagline span{display:inline-flex;align-items:center;gap:8px}
+.tagline span::before{content:"";width:11px;height:11px;border-radius:50%;background:var(--c)}
+.dotrow{--d:clamp(46px,6vw,64px);display:flex;align-items:center;margin:30px 0 8px;max-width:440px}
+.dotrow i{flex:none;width:var(--d);height:var(--d);border-radius:50%;background:var(--c);box-shadow:0 10px 24px -12px var(--c)}
+.dotrow b{flex:1;height:3px;background:var(--line);border-radius:3px}
+.dotlabels{display:grid;grid-template-columns:repeat(3,1fr);max-width:440px;font-weight:800;color:var(--ink);font-size:.95rem}
+.dotlabels span:nth-child(2){text-align:center}.dotlabels span:nth-child(3){text-align:right}
+html.menu-open{overflow:hidden}
+/* who we work with */
+.workwith{border-block:1px solid var(--line);background:var(--bg);padding-block:22px}
+.workwith .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:10px 28px}
+.workwith b{font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.workwith ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px 26px}
+.workwith li{font-weight:700;color:var(--ink);font-size:.98rem}
+/* standards grid */
+.checks{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2vw,24px)}
+@media(max-width:900px){.checks{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.checks{grid-template-columns:1fr}}
+.check{border-top:2px solid var(--brand);padding-top:18px}
+.check h3{font-size:1.08rem}.check p{margin:8px 0 0;font-size:.97rem}
+.check .ic{display:grid;place-items:center;width:40px;height:40px;border-radius:12px;background:var(--tint);color:var(--brand-ink);margin-bottom:14px}
+.check .ic svg{width:22px;height:22px}
+.small{font-size:.9rem;color:var(--muted);margin-top:22px}
+/* service pages */
+.svc-cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(16px,2vw,24px)}
+@media(max-width:760px){.svc-cols{grid-template-columns:1fr}}
+.chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:16px 0 0;padding:0}
+.chips li,.chips a{background:var(--tint);color:var(--ink);padding:8px 14px;border-radius:999px;font-weight:600;font-size:.94rem;text-decoration:none}
+.chips a:hover{background:var(--brand);color:#fff}
+.ticks.one{grid-template-columns:1fr;gap:12px}
+.ticks.one li{font-weight:400;color:var(--text)}
+.ticks.one li b{color:var(--ink)}
+.others{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.crumb{display:inline-flex;gap:8px;font-size:.9rem;font-weight:600;margin-bottom:16px;color:var(--muted)}
+.crumb a{text-decoration:none}
+.values .card{height:100%}.values .card h3{display:flex;align-items:center;gap:10px}
+.values .card h3::before{content:"";width:14px;height:14px;border-radius:50%;background:var(--c)}
+.story p{font-size:1.08rem}
+.story .closing{font-size:clamp(1.25rem,2vw,1.55rem);font-weight:800;color:var(--ink);line-height:1.3;letter-spacing:-.015em;margin-top:26px}
+
+/* homepage: clients, accreditations, testimonials */
+.accred-sub{margin:clamp(40px,5vw,56px) 0 20px}
+.accred-sub h3{font-size:clamp(1.25rem,1.8vw,1.5rem);font-weight:800;letter-spacing:-.015em}
+.testi{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(16px,2.4vw,32px)}
+@media(max-width:800px){.testi{grid-template-columns:1fr}}
+.tcol{min-width:0}.tcol>h3{margin-bottom:14px}
+.tstack{display:grid;gap:14px}
+.rev::before{content:"\201C";font-size:3.2rem;line-height:.6;color:var(--brand);font-weight:800;height:22px;display:block}
+.rev.tpl{border-style:dashed;background:transparent}.rev.tpl p,.rev.tpl .who{color:var(--muted)}
+.tpl-tag{align-self:flex-start;font-size:.75rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:#FFF5DB;color:#6B4E00;border-radius:999px;padding:4px 10px}
+.invite{max-width:720px}.invite p{margin:10px 0 18px}
+.accred-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,280px),1fr));gap:14px}
+.acc{display:flex;align-items:center;gap:16px;min-height:92px;padding:16px 20px;border:1px solid var(--line);border-radius:16px;background:var(--card);color:var(--ink);text-decoration:none}
+a.acc:hover{border-color:var(--brand)}
+.acc .mk{flex:none;display:grid;place-items:center;width:60px;height:60px;border-radius:14px;background:var(--tint);color:var(--brand-ink);font-weight:800;font-size:1rem;letter-spacing:.02em;overflow:hidden}
+.acc .mk img{width:100%;height:100%;object-fit:contain;background:#fff;padding:6px}
+.acc b{display:block;font-size:1rem}.acc small{display:block;color:var(--text);font-size:.9rem;line-height:1.4;margin-top:2px}
 .page{display:none}.page.on{display:block}
-.recbar{background:var(--t-lime);color:var(--ink);padding:14px 0;font-weight:600;text-align:center}
-.steps{counter-reset:s;list-style:none;padding:0;margin:18px 0 0;display:grid;gap:16px}
-.steps li{counter-increment:s;padding-left:52px;position:relative}
-.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:36px;height:36px;border-radius:50%;background:var(--teal);color:#032a2d;font-weight:700;display:grid;place-items:center}
-.steps li:nth-child(2)::before{background:var(--orange);color:#fff}.steps li:nth-child(3)::before{background:var(--coral);color:#fff}
-.rev{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:28px;display:flex;flex-direction:column;gap:12px;border-top:6px solid var(--teal)}
-.rev:nth-child(3n+2){border-top-color:var(--orange)}.rev:nth-child(3n){border-top-color:var(--coral)}
-.rev .st{color:var(--orange);letter-spacing:3px;font-size:1.15rem}.rev p{margin:0}.rev .who{font-weight:600;color:var(--ink)}.rev small{display:block;font-weight:400;color:var(--text)}
-.faq details{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px 22px;margin-bottom:12px}
-.faq summary{cursor:pointer;font-weight:600;color:var(--ink)}.faq details p{margin:12px 0 0}
-.prose h3{margin:28px 0 8px;font-size:1.25rem}.prose p,.prose li{max-width:72ch}
-.sec{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin-top:28px}
-.sec a{display:block;background:var(--card);border:1px solid var(--line);border-top:6px solid var(--teal);border-radius:20px;padding:22px;text-decoration:none;color:var(--ink);font-weight:600;transition:transform .2s}
-.sec a:hover{transform:translateY(-3px)}.sec a small{display:block;font-weight:400;color:var(--tealD);margin-top:6px}
-.sec a:nth-child(4n+2){border-top-color:var(--orange)}.sec a:nth-child(4n+3){border-top-color:var(--coral)}.sec a:nth-child(4n+4){border-top-color:var(--lime)}
-.fl{display:flex;flex-wrap:wrap;gap:8px 22px;margin-bottom:14px}.fl a{color:#b6d3d8}
-.back{display:inline-block;margin-bottom:18px;font-weight:600;color:var(--tealD);text-decoration:none}
-.nm{font-weight:600;color:var(--ink);margin:18px 0 6px}
-.mh h2::after{display:none}
-.quick{background:var(--card);border-bottom:1px solid var(--line);padding:30px 0}
-.quick .wrap{display:flex;gap:20px;align-items:center;justify-content:space-between;flex-wrap:wrap}
-.quick h3{font-size:1.25rem}.quick p{margin:4px 0 0}
-.quick form{display:flex;gap:10px;flex-wrap:wrap;flex:1;justify-content:flex-end;min-width:min(100%,520px)}
-.quick input{flex:1;min-width:160px;font:inherit;color:var(--ink);background:var(--bg);border:2px solid var(--line);border-radius:999px;padding:12px 18px;min-height:50px}
-.quick input:focus{border-color:var(--teal);outline:none}
-.floatcv{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:15;box-shadow:0 14px 30px -10px rgba(0,0,0,.45)}
-.who{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:26px}
-.who a,.who button{font:inherit;text-align:left;cursor:pointer;background:var(--card);border:2px solid var(--line);border-top:6px solid var(--teal);border-radius:20px;padding:20px;color:var(--ink);text-decoration:none;font-weight:700;transition:transform .2s}
-.who a:hover,.who button:hover{transform:translateY(-3px)}.who small{display:block;font-weight:400;color:var(--text);margin-top:6px}
-.who>:nth-child(2){border-top-color:var(--coral)}.who>:nth-child(3){border-top-color:var(--orange)}
-.steps li small{display:block;color:var(--text)}
-@media(max-width:600px){.floatcv{padding:11px 18px;font-size:.92rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 </style>
-<link rel="canonical" href="https://3lancerecruitment.uk/">
-<meta property="og:title" content="3Lance Recruitment Solutions"><meta property="og:description" content="Health, social care and education recruitment across the UK."><meta property="og:type" content="website"><meta property="og:url" content="https://3lancerecruitment.uk/">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"EmploymentAgency","name":"3Lance Recruitment Solutions","url":"https://3lancerecruitment.uk/","telephone":"+447450644541","email":"alia@3-lance.co.uk","areaServed":"GB"}</script>
 </head>
 <body>
+
+
 <header><div class="wrap bar">
- <a class="logo" href="#home" aria-label="3Lance Recruitment Solutions home"><img src="data:image/png;base64,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" alt="3Lance Recruitment Solutions logo"></a>
- <button id="menuBtn" aria-expanded="false" aria-controls="nav">☰ Menu</button>
+ <a class="logo" href="#home" aria-label="3Lance Recruitment Solutions home"><img src="img/logo.png" alt="3Lance Recruitment Solutions" width="481" height="163"></a>
+ <button id="menuBtn" aria-expanded="false" aria-controls="nav"><i aria-hidden="true"></i><span>Menu</span></button>
  <nav id="nav" aria-label="Main">
-  <a class="mo" href="#home" style="--c:#c5c920">Home</a><a href="#candidates" style="--c:#f07f1e">Candidates</a><a href="#clients" style="--c:#e8453c">Clients</a><a href="#services" style="--c:#12b3b0">Services</a><a href="#reviews" style="--c:#c5c920">Reviews</a><a href="#about" style="--c:#f07f1e">About Us</a><a href="#faq" style="--c:#e8453c">FAQ</a><a class="mo" href="#training" style="--c:#12b3b0">Training</a><a class="mo" href="#careers" style="--c:#c5c920">Careers</a><a class="mo" href="#news" style="--c:#f07f1e">News</a><a href="#contact" style="--c:#12b3b0">Contact</a>
-  <a class="btn teal" href="#jobs">Find a Job</a><a class="btn" href="#" data-form="staff">Request Staff</a>
+  <div class="links">
+   <a class="mo" href="#home">Home</a><a href="#clients">Clients</a><a href="#candidates">Candidates</a><a href="#services">Services</a><a href="#about">About</a><a href="#reviews" data-if-reviews hidden>Reviews</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
+  </div>
+  <div class="acts"><a class="btn sm" href="#" data-form="staff">Request Staff</a><a class="btn sm line" href="#jobs">Find a Job</a><a class="btn sm line mo" href="#" data-form="cv">Upload CV</a></div>
  </nav>
-</div><i class="stripe"></i></header>
+</div><i class="stripe" aria-hidden="true"></i></header>
 
 <main id="top">
-<div class="page" data-p="home" data-t="Health, Social Care &amp; Education Recruitment UK"><div class="hero"><div class="gem" aria-hidden="true"><i></i><i></i><i></i><i></i></div><b class="dot"></b><b class="dot"></b><b class="dot"></b><div class="wrap">
- <h1>Quality People. Professional Recruitment.</h1>
- <p class="lead">3Lance Recruitment Solutions supplies experienced and qualified professionals to health, social care and education providers across the UK.</p>
- <div class="cta"><a class="btn teal" href="#jobs">Find a Job</a><a class="btn or" href="#" data-form="reg">Register as a Candidate</a><a class="btn line" href="#" data-form="staff">Request Staff</a></div>
- <p class="trust">Working with NHS Trusts, Mental Health Trusts, Independent Fostering Agencies, Registered Children’s Homes and other providers.</p>
-</div></div>
-
-<div class="recbar"><div class="wrap">Member of the Recruitment &amp; Employment Confederation (REC)</div></div><div class="quick"><div class="wrap"><div><h3>Quick CV drop-off</h3><p>Leave your details and we will be in touch.</p></div><form id="qf"><input name="name" placeholder="Full name" aria-label="Full name" autocomplete="name" required><input name="email" type="email" placeholder="Email" aria-label="Email" autocomplete="email" required><button class="btn teal" type="submit">Drop off CV</button></form></div></div><section id="svc-home"><div class="wrap">
- <h2>Services and sectors</h2>
- <p class="intro">We provide temporary, fixed-term and permanent recruitment across health, social care and education.</p>
- <div class="grid g2" style="margin-top:28px">
-  <div class="card c1"><h3>Staffing services</h3><ul class="tags"><li>Temporary staffing</li><li>Fixed-term staffing</li><li>Permanent recruitment</li><li>Healthcare recruitment</li><li>Mental health services</li><li>Social care</li></ul></div>
-  <div class="card c2"><h3>Areas we specialise in</h3><ul class="tags"><li>Community</li><li>Ward-based services</li><li>Education and SEN</li><li>Forensic services</li><li>Dementia care</li><li>Rehabilitation</li><li>Nursing homes</li><li>Substance misuse services</li><li>Registered homes</li><li>Children’s and young people’s registered homes</li></ul></div>
+<!-- ================= HOME ================= -->
+<div class="page" data-p="home" data-t="Education, Health &amp; Social Care Recruitment UK">
+<section class="hero"><div class="wrap hero-grid">
+ <div>
+  <p class="tagline" aria-label="People. Purpose. Possibilities."><span style="--c:#E83838">People</span><span style="--c:#E86810">Purpose</span><span style="--c:#10B0AC">Possibilities</span></p>
+  <h1>Specialist recruitment for education, health and social care.</h1>
+  <p class="lead">3Lance Recruitment Solutions supplies experienced, qualified and compliance-checked professionals to NHS Trusts, care providers, schools and nurseries across the UK, on a temporary, fixed-term or permanent basis.</p>
+  <div class="cta"><a class="btn" href="#" data-form="staff">Request Staff</a><a class="btn line" href="#jobs">Find a Job</a></div>
+  <ul class="facts"><li>REC member</li><li>Safer recruitment and compliance checks</li><li>Temporary, fixed-term and permanent</li><li>UK-wide</li></ul>
  </div>
-</div></section><section><div class="wrap"><h2>How it works</h2><div class="grid g2" style="margin-top:32px">
-<div class="card c1"><h3>For candidates</h3><ol class="steps"><li><b>Register or apply.</b> Find a vacancy or register your interest with your CV.</li><li><b>Speak to our team.</b> We learn about your experience and goals.</li><li><b>Registration and compliance.</b> We guide you through the checks needed for each role.</li><li><b>Get matched.</b> We put you forward for suitable roles.</li></ol></div>
-<div class="card c2"><h3>For clients</h3><ol class="steps"><li><b>Tell us what you need.</b> Send a staffing request.</li><li><b>We confirm the details.</b> We discuss and agree your requirements.</li><li><b>We recommend candidates.</b> You receive suitable, screened professionals.</li></ol></div>
-</div></div></section><section style="background:var(--t-teal)"><div class="wrap"><h2>What people say</h2><div class="grid g3" id="revHome" style="margin-top:32px"></div>
-<div class="cta" style="margin-top:28px"><a class="btn teal" href="#reviews">Read all reviews</a><a class="btn or" href="#" data-form="review">Leave a review</a></div></div></section><section><div class="wrap"><h2>Recruitment you can rely on</h2><div class="grid g2" style="margin-top:32px">
-<div class="card c2"><h3>Looking for staff?</h3><p style="margin-top:12px">Tell us about your staffing requirements and our recruitment team will help you find experienced professionals who meet your organisation’s needs.</p><a class="btn" href="#" data-form="staff">Request Staff</a></div>
-<div class="card c1"><h3>Looking for work?</h3><p style="margin-top:12px">Explore opportunities across health, social care and education and let our consultants help you find a position that suits you.</p><a class="btn teal" href="#jobs">Find a Job</a></div>
-</div></div></section></div>
-<div class="page" data-p="candidates" data-t="Candidates and Find a Job"><section id="candidates" class="warm"><div class="wrap">
- <h2>For candidates</h2>
- <h3 style="margin:18px 0 12px">Find your next opportunity with 3Lance</h3>
- <p>Whether you are looking for a new challenge, considering a change or exploring your career options, our recruitment team is here to help.</p>
- <p>Our experience within health and social care means we understand the needs of candidates as well as employers. We provide a personal, attentive and dedicated recruitment service, taking the time to understand your experience, career goals and preferred way of working.</p>
- <p>Through our relationships with NHS Trusts and private-sector organisations across the UK, we can help connect you with opportunities that match your skills, experience and expectations.</p>
- <div class="cta" style="margin-top:28px"><a class="btn teal" href="#jobs">Browse vacancies</a></div></div></section><section id="jobs"><div class="wrap">
- <h2>Find a Job</h2>
- <p class="intro">Search current vacancies, then press Apply on any role to send your details and CV to our team.</p>
+ <figure class="hero-media">
+  <video class="lv" muted loop playsinline preload="metadata" poster="vid/hero-homework.jpg" aria-label="A teaching assistant helping a pupil with his writing"><source src="vid/hero-homework.mp4" type="video/mp4"></video>
+  <figcaption class="badge"><b>REC</b>Member of the Recruitment &amp; Employment Confederation</figcaption>
+ </figure>
+</div></section>
+<div class="workwith"><div class="wrap"><b>We work with</b><ul><li>NHS Trusts</li><li>Mental Health Trusts</li><li>Independent Fostering Agencies</li><li>Registered Children’s Homes</li><li>Schools and nurseries</li></ul></div></div>
+
+<section><div class="wrap">
+ <div class="split-head"><div class="head"><span class="eyebrow">Our services</span><h2>Four sectors. One trusted partner.</h2><p class="intro">Choose a sector to see the roles we recruit for, the settings we support and how we work.</p></div><a class="tlink" href="#services">All services →</a></div>
+ <div class="grid g4">
+  <a class="card pic" href="#svc-education"><img src="img/counting-fingers.webp" alt="A teacher counting on her fingers with a young boy" width="1400" height="933" loading="lazy" decoding="async"><div class="body"><h3>Education &amp; SEN</h3><p>Teaching assistants and one-to-one SEN support.</p><span class="tlink">View service →</span></div></a>
+  <a class="card pic" href="#svc-early-years"><img src="img/painting-laughing.webp" alt="A nursery practitioner and a laughing child painting at a table" width="1400" height="933" loading="lazy" decoding="async"><div class="body"><h3>Nursery &amp; early years</h3><p>Nursery practitioners and early years staff.</p><span class="tlink">View service →</span></div></a>
+  <a class="card pic" href="#svc-healthcare"><img src="img/nurse-blue-scrubs.webp" alt="A nurse in blue scrubs with a stethoscope and clipboard" width="933" height="1400" loading="lazy" decoding="async"><div class="body"><h3>Healthcare</h3><p>Nurses and healthcare staff for NHS and private settings.</p><span class="tlink">View service →</span></div></a>
+  <a class="card pic" href="#svc-social-care"><img src="img/care-home-table.webp" alt="A care worker chatting with residents around a table" width="1400" height="933" loading="lazy" decoding="async"><div class="body"><h3>Social care</h3><p>Support workers and carers for homes and community services.</p><span class="tlink">View service →</span></div></a>
+ </div>
+</div></section>
+
+<section class="tint" id="standards"><div class="wrap">
+ <div class="head"><span class="eyebrow">Why organisations trust us</span><h2>Every candidate checked before they start</h2><p class="intro">Our consultants work with dedicated compliance specialists, so the professionals we put forward meet the qualification, experience and safety requirements of each role.</p></div>
+ <div class="checks">
+  <div class="check"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16v12H4z"/><circle cx="9" cy="11" r="2"/><path d="M14 10h4M14 13h3M6.5 15.5c.6-1.2 1.5-1.8 2.5-1.8s1.9.6 2.5 1.8"/></svg></span><h3>Identity and right to work</h3><p>Original documents checked to confirm identity and the right to work in the UK.</p></div>
+  <div class="check"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg></span><h3>DBS checks</h3><p>Criminal record checks at the level the role requires, including enhanced checks for work with children and vulnerable adults.</p></div>
+  <div class="check"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="5"/><path d="M9 13.5L8 21l4-2 4 2-1-7.5"/></svg></span><h3>Registration and qualifications</h3><p>Professional registration (such as the NMC register for nurses) and qualifications verified with the issuing body.</p></div>
+  <div class="check"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h10l4 4v12H5z"/><path d="M14 4v5h5M8 13h8M8 16h6"/></svg></span><h3>References and work history</h3><p>Employment history reviewed and references taken, with any gaps explored.</p></div>
+  <div class="check"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h12v9H8l-4 3z"/><path d="M16 9h4v9l-3-2.5h-6V14"/></svg></span><h3>Interview and suitability</h3><p>Every candidate is interviewed so we understand their skills, experience and the settings they suit.</p></div>
+  <div class="check"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="1"/></svg></span><h3>Matched to your setting</h3><p>We recommend people for the needs of your service, not simply the first available name.</p></div>
+ </div>
+ <p class="small">Checks follow the requirements of each role and setting, including NHS employment check standards and safer recruitment guidance for schools.</p>
+</div></section><section class="how"><div class="wrap">
+ <div class="head"><span class="eyebrow">How it works</span><h2>Simple steps, whichever side you’re on</h2></div>
+ <div class="grid g2">
+  
+  <div class="card pic"><img src="img/modelling-clay.webp" alt="An early years practitioner working one-to-one with a girl using modelling clay" width="1400" height="935" loading="lazy" decoding="async"><div class="body"><h3>For clients</h3><ol class="steps"><li><b>Tell us what you need.</b> Send a staffing request.</li><li><b>We confirm the details.</b> We discuss and agree your requirements.</li><li><b>We recommend candidates.</b> You receive suitable, screened professionals.</li></ol></div></div>
+  <div class="card pic"><img src="img/interview.webp" alt="A recruiter smiling during an interview with a candidate" width="1400" height="788" loading="lazy" decoding="async"><div class="body"><h3>For candidates</h3><ol class="steps"><li><b>Register or apply.</b> Find a vacancy or register your interest with your CV.</li><li><b>Speak to our team.</b> We learn about your experience and goals.</li><li><b>Registration and compliance.</b> We guide you through the checks needed for each role.</li><li><b>Get matched.</b> We put you forward for suitable roles.</li></ol></div></div>
+ </div>
+</div></section>
+
+<section class="vband"><video class="lv" muted loop playsinline preload="metadata" poster="vid/blocks.jpg" aria-hidden="true"><source src="vid/blocks.mp4" type="video/mp4"></video><div class="wrap">
+ <span class="eyebrow">Recruitment you can rely on</span>
+ <p class="vq">Placing the right people in the right roles, even at short notice.</p>
+ <div class="cta"><a class="btn light" href="#" data-form="staff">Request Staff</a><a class="btn ghost" href="#about">About 3Lance</a></div>
+</div></section>
+
+<section><div class="wrap">
+ <div class="head"><span class="eyebrow">Where our people work</span><h2>Making a difference in every setting</h2></div>
+ <div class="gallery">
+  <figure><img src="img/story-time.webp" alt="A practitioner reading a picture book to young children" width="935" height="1400" loading="lazy" decoding="async"><figcaption>Early years</figcaption></figure>
+  <figure><img src="img/small-table-session.webp" alt="A support worker cheering on a boy working at a small table" width="1400" height="933" loading="lazy" decoding="async"><figcaption>SEN support</figcaption></figure>
+  <figure><img src="img/nurse-green-scrubs.webp" alt="A nurse in green scrubs holding a tablet" width="1400" height="933" loading="lazy" decoding="async"><figcaption>Healthcare</figcaption></figure>
+  <figure><img src="img/care-hands.webp" alt="A carer holding hands with an older woman" width="1400" height="933" loading="lazy" decoding="async"><figcaption>Social care</figcaption></figure>
+ </div>
+</div></section>
+
+<section class="tint" id="testimonials"><div class="wrap">
+ <div class="split-head"><div class="head"><span class="eyebrow">Testimonials</span><h2>What clients and candidates say</h2></div><div class="cta"><a class="btn line sm" href="#reviews" data-if-reviews hidden>Read all reviews</a><a class="btn sm" href="#" data-form="review">Leave a review</a></div></div>
+ <div class="testi">
+  <div class="tcol" id="tClientsWrap"><h3>From clients</h3><div class="tstack" id="tClients"></div></div>
+  <div class="tcol" id="tCandsWrap"><h3>From candidates</h3><div class="tstack" id="tCands"></div></div>
+ </div>
+ <div class="card invite" id="tInvite" hidden><h3>Worked with 3Lance?</h3><p>We would love to hear about your experience, whether you are an organisation we supply or a professional we have placed.</p><a class="btn" href="#" data-form="review">Leave a review</a></div>
+ <div id="revHome" hidden></div>
+</div></section>
+
+<section id="trusted"><div class="wrap">
+ <div class="head"><span class="eyebrow">Our clients</span><h2>Organisations we’ve worked with</h2><p class="intro">Local authorities, charities and providers across education, health and social care.</p></div>
+ <ul class="accred-list" id="clientList"></ul>
+ <div class="head accred-sub"><span class="eyebrow">Accreditations and memberships</span><h3 id="accH">Working to recognised industry standards</h3></div>
+ <ul class="accred-list" id="accList"></ul>
+</div></section>
+
+<section class="soft"><div class="wrap split" style="align-items:center">
+ <div><span class="eyebrow">About 3Lance</span><h2>People. Purpose. Possibilities.</h2><p class="intro">Three dots. One connection. Endless possibilities. We believe even the smallest connection can make a meaningful difference: a new career, the right person for a team, the support a child deserves.</p><a class="tlink" href="#about">Read our story →</a></div>
+ <div><div class="dotrow" aria-hidden="true"><i style="--c:#E83838"></i><b></b><i style="--c:#E86810"></i><b></b><i style="--c:#10B0AC"></i></div><div class="dotlabels"><span>People</span><span>Purpose</span><span>Possibilities</span></div></div>
+</div></section>
+<section><div class="wrap panels">
+ <div class="panel"><img src="img/alphabet-book.webp" alt="A teacher helping a girl with an alphabet activity book" width="933" height="1400" loading="lazy" decoding="async"><div><h3>Looking for staff?</h3><p>Tell us what you need and our team will find experienced professionals who fit your setting.</p><a class="btn light" href="#" data-form="staff">Request Staff</a></div></div>
+ <div class="panel"><img src="img/library-reading.webp" alt="A teacher helping a boy with a book in a school library" width="935" height="1400" loading="lazy" decoding="async"><div><h3>Looking for work?</h3><p>Explore roles across education, health and social care, with a consultant to guide you.</p><a class="btn light" href="#jobs">Find a Job</a></div></div>
+</div></section>
+
+<section class="soft"><div class="wrap register">
+ <div><span class="eyebrow">Quick CV drop-off</span><h2>Leave your details and we’ll be in touch</h2><p>No account needed. We’ll contact you about suitable roles.</p></div>
+ <form id="qf"><input name="name" placeholder="Full name" aria-label="Full name" autocomplete="name" required><input name="email" type="email" placeholder="Email" aria-label="Email" autocomplete="email" required><button class="btn" type="submit">Drop off CV</button></form>
+</div></section>
+</div>
+
+<!-- ================= CANDIDATES ================= -->
+<div class="page" data-p="candidates" data-t="Candidates and Find a Job">
+<section id="candidates" class="page-head"><div class="wrap split">
+ <div>
+  <span class="eyebrow">For candidates</span>
+  <h2>Find your next opportunity with 3Lance</h2>
+  <p class="intro">Whether you are looking for a new challenge, considering a change or exploring your career options, our recruitment team is here to help.</p>
+  <p>Our experience within health and social care means we understand the needs of candidates as well as employers. We provide a personal, attentive and dedicated recruitment service, taking the time to understand your experience, career goals and preferred way of working.</p>
+  <p>Through our relationships with NHS Trusts and private-sector organisations across the UK, we can help connect you with opportunities that match your skills, experience and expectations.</p>
+  <div class="cta" style="margin-top:26px"><a class="btn" href="#jobs">Browse vacancies</a><a class="btn line" href="#" data-form="reg">Register with 3Lance</a></div>
+ </div>
+ <figure class="photo"><img src="img/homework-help.webp" alt="A teaching assistant pointing to a line in a boy’s exercise book" width="933" height="1400" loading="lazy" decoding="async"></figure>
+</div></section>
+<section id="jobs"><div class="wrap">
+ <div class="head"><span class="eyebrow">Vacancies</span><h2>Find a Job</h2><p class="intro">Search current vacancies, then press Apply on any role to send your details and CV to our team.</p></div>
  <form class="search" id="sf" role="search">
   <input id="q" type="search" placeholder="Keyword, e.g. support worker" aria-label="Keyword">
   <select id="loc" aria-label="Location"><option value="">All locations</option></select>
   <select id="typ" aria-label="Job type"><option value="">All job types</option></select>
-  <button class="btn teal" type="submit">Search</button><button class="btn line" type="button" id="reset" style="color:var(--ink)">Clear</button>
+  <button class="btn" type="submit">Search</button><button class="btn line" type="button" id="clearSearch">Clear</button>
  </form>
- <p class="banner" id="sampleBanner">Preview only: the vacancies below are example listings. Replace them with real vacancies (see the JOBS list in the code) before launch.</p>
+ <p class="banner" id="sampleBanner">Preview only: the vacancies below are example listings. Replace them with real vacancies before launch.</p>
  <div id="count" aria-live="polite"></div>
  <div id="list"></div>
-</div></section><section><div class="wrap"><h3 style="margin-top:34px">Why choose 3Lance?</h3>
+</div></section>
+<section class="tint"><div class="wrap">
+ <div class="strip"><img src="img/alphabet-book-back.webp" alt="A practitioner and a girl looking at an alphabet book" width="933" height="1400" loading="lazy" decoding="async"><img src="img/floor-shapes.webp" alt="A boy arranging coloured shapes on a classroom rug" width="1400" height="933" loading="lazy" decoding="async"><img src="img/outdoor-drawing.webp" alt="Children drawing with leaves at an outdoor table" width="1400" height="933" loading="lazy" decoding="async"></div>
+ <div class="head" style="margin:44px 0 26px"><span class="eyebrow">Why 3Lance</span><h2>Why choose 3Lance?</h2></div>
  <ul class="ticks"><li>A range of vacancies</li><li>Temporary, fixed-term and permanent opportunities where available</li><li>Dedicated recruitment support</li><li>Specialist registration and compliance processes</li><li>A straightforward application process</li><li>Accommodation support where applicable and where confirmed</li><li>Out-of-hours support where available</li><li>Knowledge of the sectors we serve</li><li>Appropriate screening and professional standards</li></ul>
- <p style="margin-top:28px"><strong style="color:var(--ink)">Ready to explore opportunities?</strong></p>
- <div class="cta"><a class="btn or" href="#" data-form="reg">Register with 3Lance</a><a class="btn teal" href="#jobs">Browse vacancies</a></div>
-</div></section><section style="padding-top:0"><div class="wrap grid g2">
-<div class="card c1"><h3>What you will need to register</h3><p style="margin-top:12px">Exact requirements vary by role. <strong>NEEDS CONFIRMATION:</strong> list your required documents here, for example proof of identity, right to work in the UK, qualifications or professional registration, DBS and references.</p></div>
-<div class="card c2"><h3>Refer a friend</h3><p style="margin-top:12px">Know someone looking for health, social care or education work? Tell us about them and we will get in touch.</p><a class="btn or" href="#" data-form="refer">Refer a friend</a></div>
-</div></section></div>
-<div class="page" data-p="clients" data-t="Clients"><section id="clients" class="band"><div class="wrap">
- <h2>For clients</h2>
- <h3 style="margin:18px 0 12px">Quality People. Professional Recruitment.</h3>
- <p>We provide experienced and qualified health and social care professionals for a wide range of vacancies, including fixed-term and permanent positions.</p>
- <p>Our recruitment consultants are supported by dedicated compliance specialists who help ensure candidates meet the appropriate qualification, experience and compliance requirements for each role.</p>
- <p>We take pride in the calibre of professionals we supply. Our screening and verification process helps us understand each candidate’s skills, experience and suitability so that we can recommend the right people for the right positions.</p>
- <p>We work with organisations including NHS Trusts, Mental Health Trusts, Independent Fostering Agencies, Registered Children’s Homes and other health, social care and education providers.</p>
- <p><strong style="color:var(--ink)">Need reliable staff?</strong></p>
- <div class="cta"><a class="btn" href="#" data-form="staff">Request Staff</a><a class="btn line" href="#contact">Contact 3Lance</a></div>
-</div></section></div>
-<div class="page" data-p="services" data-t="Services"><section id="services"><div class="wrap">
- <h2>Services and sectors</h2>
- <p class="intro">We provide temporary, fixed-term and permanent recruitment across health, social care and education.</p>
- <div class="grid g2" style="margin-top:28px">
-  <div class="card c1"><h3>Staffing services</h3><ul class="tags"><li>Temporary staffing</li><li>Fixed-term staffing</li><li>Permanent recruitment</li><li>Healthcare recruitment</li><li>Mental health services</li><li>Social care</li></ul></div>
-  <div class="card c2"><h3>Areas we specialise in</h3><ul class="tags"><li>Community</li><li>Ward-based services</li><li>Education and SEN</li><li>Forensic services</li><li>Dementia care</li><li>Rehabilitation</li><li>Nursing homes</li><li>Substance misuse services</li><li>Registered homes</li><li>Children’s and young people’s registered homes</li></ul></div>
+</div></section>
+<section><div class="wrap grid g2">
+ <div class="card"><h3>What you will need to register</h3><p>Exact requirements vary by role. <strong>NEEDS CONFIRMATION:</strong> list your required documents here, for example proof of identity, right to work in the UK, qualifications or professional registration, DBS and references.</p></div>
+ <div class="card"><h3>Refer a friend</h3><p>Know someone looking for education, health or social care work? Tell us about them and we will get in touch.</p><a class="btn" href="#" data-form="refer">Refer a friend</a></div>
+</div></section>
+</div>
+
+<!-- ================= CLIENTS ================= -->
+<div class="page" data-p="clients" data-t="Clients">
+<section id="clients" class="page-head"><div class="wrap split">
+ <div>
+  <span class="eyebrow">For clients</span>
+  <h2>Reliable staff for education, health and social care</h2>
+  <p class="intro">We provide experienced and qualified health and social care professionals for a wide range of vacancies, including fixed-term and permanent positions.</p>
+  <p>Our recruitment consultants are supported by dedicated compliance specialists who help ensure candidates meet the appropriate qualification, experience and compliance requirements for each role.</p>
+  <p>We take pride in the calibre of professionals we supply. Our screening and verification process helps us understand each candidate’s skills, experience and suitability so that we can recommend the right people for the right positions.</p>
+  <p>We work with organisations including NHS Trusts, Mental Health Trusts, Independent Fostering Agencies, Registered Children’s Homes and other education, health and social care providers.</p>
+  <div class="cta" style="margin-top:26px"><a class="btn" href="#" data-form="staff">Request Staff</a><a class="btn line" href="#contact">Contact 3Lance</a></div>
  </div>
-</div></section></div>
+ <figure class="photo"><img src="img/care-hands.webp" alt="A carer holding hands with an older woman" width="1400" height="933" loading="lazy" decoding="async"></figure>
+</div></section>
+<section><div class="wrap"><div class="strip"><img src="img/nurse-blue-scrubs.webp" alt="A nurse in blue scrubs holding a clipboard" width="933" height="1400" loading="lazy" decoding="async"><img src="img/ball-play.webp" alt="A nursery practitioner playing with a toddler" width="935" height="1400" loading="lazy" decoding="async"><img src="img/nurse-green-scrubs.webp" alt="A nurse in green scrubs holding a tablet" width="1400" height="933" loading="lazy" decoding="async"></div></div></section>
+</div>
+
+<!-- ================= SERVICES ================= -->
+<div class="page" data-p="services" data-t="Services">
+<section id="services" class="page-head"><div class="wrap"><div class="head" style="margin-bottom:0"><span class="eyebrow">Services</span><h2>Services and sectors</h2><p class="intro">We provide temporary, fixed-term and permanent recruitment across education, health and social care.</p></div></div></section>
+<section><div class="wrap">
+ <div class="grid g4">
+  <a class="card pic" href="#svc-education"><img src="img/library-reading.webp" alt="A teacher helping a boy with a book" width="935" height="1400" loading="lazy" decoding="async"><div class="body"><h3>Education &amp; SEN</h3><p>Teaching assistants, SEN and one-to-one support.</p><span class="tlink">View service →</span></div></a>
+  <a class="card pic" href="#svc-early-years"><img src="img/story-time.webp" alt="A practitioner reading to young children" width="935" height="1400" loading="lazy" decoding="async"><div class="body"><h3>Nursery &amp; early years</h3><p>Nursery practitioners and early years staff.</p><span class="tlink">View service →</span></div></a>
+  <a class="card pic" href="#svc-healthcare"><img src="img/nurse-green-scrubs.webp" alt="A nurse holding a tablet" width="1400" height="933" loading="lazy" decoding="async"><div class="body"><h3>Healthcare</h3><p>Ward-based, community and mental health staff.</p><span class="tlink">View service →</span></div></a>
+  <a class="card pic" href="#svc-social-care"><img src="img/care-hands.webp" alt="A carer holding an older woman’s hand" width="1400" height="933" loading="lazy" decoding="async"><div class="body"><h3>Social care</h3><p>Dementia care, nursing homes and registered homes.</p><span class="tlink">View service →</span></div></a>
+ </div>
+ <div class="grid g2" style="margin-top:clamp(20px,3vw,32px)">
+  <div class="card"><h3>Staffing services</h3><ul class="tags"><li>Temporary staffing</li><li>Fixed-term staffing</li><li>Permanent recruitment</li><li>Healthcare recruitment</li><li>Mental health services</li><li>Social care</li></ul></div>
+  <div class="card"><h3>Areas we specialise in</h3><ul class="chips"><li><a href="#svc-healthcare">Community</a></li><li><a href="#svc-healthcare">Ward-based services</a></li><li><a href="#svc-education">Education and SEN</a></li><li><a href="#svc-healthcare">Forensic services</a></li><li><a href="#svc-social-care">Dementia care</a></li><li><a href="#svc-healthcare">Rehabilitation</a></li><li><a href="#svc-social-care">Nursing homes</a></li><li><a href="#svc-healthcare">Substance misuse services</a></li><li><a href="#svc-social-care">Registered homes</a></li><li><a href="#svc-social-care">Children’s and young people’s registered homes</a></li></ul></div>
+ </div>
+</div></section>
+</div>
+
+
+<!-- ================= SERVICE: education ================= -->
+<div class="page" data-p="svc-education" data-t="Education &amp; SEN recruitment">
+<section class="page-head"><div class="wrap split">
+ <div>
+  <span class="crumb"><a href="#services">Services</a><span aria-hidden="true">/</span><span>Education &amp; SEN</span></span>
+  <h2>Education &amp; SEN recruitment</h2>
+  <p class="intro">Teaching assistants, SEN support staff and one-to-one learning support for schools, special schools and alternative provision.</p>
+  <p>Every pupil deserves support that fits them. We place teaching assistants and SEN professionals who can build trust with children and young people, follow their support plans and work closely with teachers and families.</p>
+  <div class="cta" style="margin-top:24px"><a class="btn" href="#" data-form="staff">Request Staff</a><a class="btn line" href="#" data-sector="Education">See education vacancies</a></div>
+ </div>
+ <figure class="photo"><img src="img/library-reading.webp" alt="A teacher helping a boy with a book in a school library" width="935" height="1400" loading="lazy" decoding="async"></figure>
+</div></section>
+<section><div class="wrap svc-cols">
+ <div class="card"><h3>Roles we recruit for</h3><ul class="chips"><li>SEN teaching assistants</li><li>One-to-one support assistants</li><li>Teaching assistants (primary and secondary)</li><li>Learning support assistants</li><li>Behaviour and pastoral support</li><li>Cover supervisors</li></ul></div>
+ <div class="card"><h3>Settings we support</h3><ul class="chips"><li>Mainstream primary and secondary schools</li><li>Special schools</li><li>Alternative provision and pupil referral units</li><li>SEN units and resource bases</li></ul></div>
+ <div class="card"><h3>What clients can expect</h3><ul class="ticks one" style="margin-top:16px"><li><span><b>Staff matched to pupils’ needs,</b> including pupils with an education, health and care plan (EHCP).</span></li><li><span><b>Safer recruitment</b> in line with the Department for Education’s <i>Keeping children safe in education</i> guidance.</span></li><li><span><b>Day-to-day, short-term and long-term</b> support, including cover at short notice.</span></li><li><span><b>One point of contact</b> who understands your school.</span></li></ul></div>
+ <div class="card"><h3>For candidates: what you’ll usually need</h3><ul class="ticks one" style="margin-top:16px"><li><span>An enhanced DBS check with the children’s barred list, or willingness to apply for one</span></li><li><span>The right to work in the UK</span></li><li><span>Experience with children or young people, ideally including special educational needs such as autism, ADHD, SEMH or speech and language needs</span></li><li><span>Two professional references</span></li></ul><div class="cta" style="margin-top:20px"><a class="btn sm" href="#" data-form="reg">Register with 3Lance</a></div></div>
+</div></section>
+<section class="soft" style="padding-block:44px"><div class="wrap"><h3>Other services</h3><div class="others"><a class="btn line sm" href="#svc-early-years">Nursery &amp; early years</a><a class="btn line sm" href="#svc-healthcare">Healthcare</a><a class="btn line sm" href="#svc-social-care">Social care</a><a class="btn line sm" href="#services">All services</a></div></div></section>
+</div>
+
+<!-- ================= SERVICE: early-years ================= -->
+<div class="page" data-p="svc-early-years" data-t="Nursery &amp; early years recruitment">
+<section class="page-head"><div class="wrap split">
+ <div>
+  <span class="crumb"><a href="#services">Services</a><span aria-hidden="true">/</span><span>Nursery &amp; early years</span></span>
+  <h2>Nursery &amp; early years recruitment</h2>
+  <p class="intro">Qualified and experienced early years staff for nurseries and pre-schools, helping you stay within EYFS staff-to-child ratios.</p>
+  <p>The early years shape everything that follows. We recruit warm, qualified practitioners who understand the Early Years Foundation Stage and can step into your rooms with confidence.</p>
+  <div class="cta" style="margin-top:24px"><a class="btn" href="#" data-form="staff">Request Staff</a><a class="btn line" href="#" data-sector="Nursery">See nursery and early years vacancies</a></div>
+ </div>
+ <figure class="photo"><img src="img/story-time.webp" alt="A practitioner reading a picture book to young children" width="935" height="1400" loading="lazy" decoding="async"></figure>
+</div></section>
+<section><div class="wrap svc-cols">
+ <div class="card"><h3>Roles we recruit for</h3><ul class="chips"><li>Nursery assistants</li><li>Nursery practitioners (Level 2 and Level 3)</li><li>Early years educators</li><li>Room leaders</li><li>Early years SEN support</li><li>Deputy managers</li></ul></div>
+ <div class="card"><h3>Settings we support</h3><ul class="chips"><li>Day nurseries</li><li>Pre-schools</li><li>School nursery classes</li><li>Children’s centres</li></ul></div>
+ <div class="card"><h3>What clients can expect</h3><ul class="ticks one" style="margin-top:16px"><li><span><b>Qualifications checked</b> against the Department for Education’s early years qualification requirements, so you know who counts in your ratios.</span></li><li><span><b>Staff who know the EYFS</b> and your safeguarding and welfare duties.</span></li><li><span><b>Cover for absence</b>, as well as fixed-term and permanent placements.</span></li><li><span><b>Paediatric first aid</b> confirmed where your setting needs it.</span></li></ul></div>
+ <div class="card"><h3>For candidates: what you’ll usually need</h3><ul class="ticks one" style="margin-top:16px"><li><span>A full and relevant early years qualification (Level 2 or Level 3), or relevant experience</span></li><li><span>An enhanced DBS check, or willingness to apply for one</span></li><li><span>Paediatric first aid (desirable)</span></li><li><span>The right to work in the UK and two references</span></li></ul><div class="cta" style="margin-top:20px"><a class="btn sm" href="#" data-form="reg">Register with 3Lance</a></div></div>
+</div></section>
+<section class="soft" style="padding-block:44px"><div class="wrap"><h3>Other services</h3><div class="others"><a class="btn line sm" href="#svc-education">Education &amp; SEN</a><a class="btn line sm" href="#svc-healthcare">Healthcare</a><a class="btn line sm" href="#svc-social-care">Social care</a><a class="btn line sm" href="#services">All services</a></div></div></section>
+</div>
+
+<!-- ================= SERVICE: healthcare ================= -->
+<div class="page" data-p="svc-healthcare" data-t="Healthcare recruitment">
+<section class="page-head"><div class="wrap split">
+ <div>
+  <span class="crumb"><a href="#services">Services</a><span aria-hidden="true">/</span><span>Healthcare</span></span>
+  <h2>Healthcare recruitment</h2>
+  <p class="intro">Nurses, healthcare assistants and support workers for NHS Trusts, Mental Health Trusts and independent providers, in ward-based and community services.</p>
+  <p>Safe staffing protects patients and teams. We supply registered and unregistered healthcare professionals who are checked, prepared and ready to work in your service.</p>
+  <div class="cta" style="margin-top:24px"><a class="btn" href="#" data-form="staff">Request Staff</a><a class="btn line" href="#" data-sector="Health">See healthcare vacancies</a></div>
+ </div>
+ <figure class="photo"><img src="img/nurse-blue-scrubs.webp" alt="A nurse in blue scrubs with a stethoscope and clipboard" width="933" height="1400" loading="lazy" decoding="async"></figure>
+</div></section>
+<section><div class="wrap svc-cols">
+ <div class="card"><h3>Roles we recruit for</h3><ul class="chips"><li>Registered general nurses (RGN)</li><li>Registered mental health nurses (RMN)</li><li>Learning disability nurses (RNLD)</li><li>Healthcare assistants</li><li>Mental health support workers</li><li>Forensic and secure services support workers</li><li>Rehabilitation support workers</li></ul></div>
+ <div class="card"><h3>Settings we support</h3><ul class="chips"><li>Acute and ward-based services</li><li>Mental health services</li><li>Forensic and secure services</li><li>Rehabilitation</li><li>Community services</li><li>Substance misuse services</li></ul></div>
+ <div class="card"><h3>What clients can expect</h3><ul class="ticks one" style="margin-top:16px"><li><span><b>Pre-employment checks</b> following the NHS Employers standards: identity, right to work, professional registration and qualifications, employment history and references, criminal record and work health assessment.</span></li><li><span><b>NMC registration verified</b> for every nurse we supply.</span></li><li><span><b>Mandatory training checked</b> before placement.</span></li><li><span><b>Temporary, fixed-term and permanent</b> staffing.</span></li></ul></div>
+ <div class="card"><h3>For candidates: what you’ll usually need</h3><ul class="ticks one" style="margin-top:16px"><li><span>Current NMC registration for nursing roles</span></li><li><span>Up-to-date mandatory training, such as basic life support, moving and handling and safeguarding</span></li><li><span>An enhanced DBS check, or willingness to apply for one</span></li><li><span>The right to work in the UK and references covering recent employment</span></li></ul><div class="cta" style="margin-top:20px"><a class="btn sm" href="#" data-form="reg">Register with 3Lance</a></div></div>
+</div></section>
+<section class="soft" style="padding-block:44px"><div class="wrap"><h3>Other services</h3><div class="others"><a class="btn line sm" href="#svc-education">Education &amp; SEN</a><a class="btn line sm" href="#svc-early-years">Nursery &amp; early years</a><a class="btn line sm" href="#svc-social-care">Social care</a><a class="btn line sm" href="#services">All services</a></div></div></section>
+</div>
+
+<!-- ================= SERVICE: social-care ================= -->
+<div class="page" data-p="svc-social-care" data-t="Social care recruitment">
+<section class="page-head"><div class="wrap split">
+ <div>
+  <span class="crumb"><a href="#services">Services</a><span aria-hidden="true">/</span><span>Social care</span></span>
+  <h2>Social care recruitment</h2>
+  <p class="intro">Support workers, carers and senior staff for residential and nursing homes, supported living, community services and registered children’s homes.</p>
+  <p>Good care is built on people who care. We look for values as well as experience, so the staff we place treat every person with dignity, patience and respect.</p>
+  <div class="cta" style="margin-top:24px"><a class="btn" href="#" data-form="staff">Request Staff</a><a class="btn line" href="#" data-sector="Social care">See social care vacancies</a></div>
+ </div>
+ <figure class="photo"><img src="img/care-home-table.webp" alt="A care worker chatting with residents around a table" width="1400" height="933" loading="lazy" decoding="async"></figure>
+</div></section>
+<section><div class="wrap svc-cols">
+ <div class="card"><h3>Roles we recruit for</h3><ul class="chips"><li>Support workers</li><li>Care assistants</li><li>Senior carers and team leaders</li><li>Dementia care staff</li><li>Residential childcare workers</li><li>Supported living staff</li></ul></div>
+ <div class="card"><h3>Settings we support</h3><ul class="chips"><li>Residential and nursing homes</li><li>Dementia care</li><li>Supported living and community services</li><li>Children’s and young people’s registered homes</li><li>Independent fostering agencies</li></ul></div>
+ <div class="card"><h3>What clients can expect</h3><ul class="ticks one" style="margin-top:16px"><li><span><b>Values-based recruitment:</b> we look at attitude and approach as well as experience.</span></li><li><span><b>Training checked,</b> including the Care Certificate or the newer Level 2 Adult Social Care Certificate where relevant.</span></li><li><span><b>Staff who understand the standards</b> expected by the CQC in adult care and Ofsted in children’s homes.</span></li><li><span><b>Flexible cover</b> for short notice, fixed-term and permanent needs.</span></li></ul></div>
+ <div class="card"><h3>For candidates: what you’ll usually need</h3><ul class="ticks one" style="margin-top:16px"><li><span>The Care Certificate or Level 2 Adult Social Care Certificate, or willingness to complete it</span></li><li><span>For children’s homes: the Level 3 Diploma in Residential Childcare, or willingness to work towards it</span></li><li><span>An enhanced DBS check, or willingness to apply for one</span></li><li><span>The right to work in the UK and two references</span></li></ul><div class="cta" style="margin-top:20px"><a class="btn sm" href="#" data-form="reg">Register with 3Lance</a></div></div>
+</div></section>
+<section class="soft" style="padding-block:44px"><div class="wrap"><h3>Other services</h3><div class="others"><a class="btn line sm" href="#svc-education">Education &amp; SEN</a><a class="btn line sm" href="#svc-early-years">Nursery &amp; early years</a><a class="btn line sm" href="#svc-healthcare">Healthcare</a><a class="btn line sm" href="#services">All services</a></div></div></section>
+</div>
+
+<!-- ================= TRAINING (not in menu until content is confirmed) ================= -->
 <div class="page" data-p="training" data-t="Training"><section id="training"><div class="wrap">
- <h2>Training</h2>
- <div class="ph" style="margin-top:22px"><strong>Replace with confirmed training information.</strong> <p style="margin:8px 0 0">We will describe training-related services here once the details are confirmed. Online courses and payments are not part of this website.</p></div>
+ <span class="eyebrow">Training</span><h2>Training</h2>
+ <img class="banner-img" src="img/drawing-together.webp" alt="An adult and a child drawing together" width="1400" height="788" loading="lazy" decoding="async">
+ <div class="ph" style="margin-top:22px"><strong>Replace with confirmed training information.</strong><p style="margin:8px 0 0">We will describe training-related services here once the details are confirmed.</p></div>
 </div></section></div>
-<div class="page" data-p="about" data-t="About Us"><section id="about" style="padding-top:0"><div class="wrap">
- <h2>About 3Lance</h2>
- <p class="statement" style="margin-top:22px">Placing the right people in the right roles, even at short notice.</p>
- <div class="grid g2" style="margin-top:28px;align-items:start">
-  <div><p>At 3Lance, we have been providing high-quality staffing solutions to the health and social care sector for many years. We take pride in being recognised by our clients as a reputable, reliable and professional recruitment provider.</p><p>Our extensive experience and understanding of the sector enable us to place the right people in the right roles, even at short notice.</p></div>
-  <div><p>As specialist recruiters, we source qualified and experienced professionals for a wide range of healthcare, social care and education settings. Quality, best practice and high professional standards are at the heart of everything we do.</p></div>
+
+<!-- ================= ABOUT ================= -->
+<div class="page" data-p="about" data-t="About Us">
+<section id="about" class="page-head"><div class="wrap split">
+ <div>
+  <span class="eyebrow">About 3Lance</span>
+  <h2>People. Purpose. Possibilities.</h2>
+  <p class="statement">Three dots. One connection. Endless possibilities.</p>
  </div>
- </div></section><section style="padding-top:0"><div class="wrap"><div class="cta"><a class="btn teal" href="#careers">Careers at 3Lance</a><a class="btn or" href="#reviews">Read reviews</a></div></div></section></div>
-<div class="page" data-p="reviews" data-t="Reviews"><section><div class="wrap"><h2>Reviews</h2><p class="intro">What clients and candidates say about working with 3Lance.</p><div class="grid g3" id="revAll" style="margin-top:32px"></div>
-<div class="cta" style="margin-top:28px"><a class="btn or" href="#" data-form="review">Leave a review</a></div>
+ <div><div class="dotrow" aria-hidden="true"><i style="--c:#E83838"></i><b></b><i style="--c:#E86810"></i><b></b><i style="--c:#10B0AC"></i></div><div class="dotlabels"><span>People</span><span>Purpose</span><span>Possibilities</span></div></div>
+</div></section>
+<section><div class="wrap split" style="align-items:start">
+ <div class="story">
+  <p>At 3Lance, we believe that even the smallest connection can make a meaningful difference.</p>
+  <p>A connection can open a door to a new career, help an organisation find the right talent, give a child the support they deserve, or bring hope to a community.</p>
+  <p>We exist to bring people, purpose and possibilities together, creating connections that go beyond opportunities and make a lasting impact.</p>
+  <p>Because to us, recruitment is more than filling positions, and support is more than providing care. It’s about recognising potential, building trust, empowering individuals and creating brighter futures.</p>
+  <p class="closing">At 3Lance, we don’t just connect people. We connect possibilities, purpose and lives.</p>
+ </div>
+ <figure class="photo"><img src="img/alphabet-book.webp" alt="A teacher helping a girl with an alphabet activity book" width="933" height="1400" loading="lazy" decoding="async"></figure>
+</div></section>
+<section class="tint values"><div class="wrap">
+ <div class="head"><span class="eyebrow">What the three dots stand for</span><h2>Our values</h2></div>
+ <div class="grid g3">
+  <div class="card" style="--c:#E83838"><h3>People</h3><p>We recognise potential in every candidate and build relationships based on trust, with the professionals we place and the organisations we serve.</p></div>
+  <div class="card" style="--c:#E86810"><h3>Purpose</h3><p>Recruitment is more than filling positions, and support is more than providing care. Every placement should make a real difference to the people receiving care and support.</p></div>
+  <div class="card" style="--c:#10B0AC"><h3>Possibilities</h3><p>A new career, the right talent for a team, the support a child deserves. We connect people to what comes next and help create brighter futures.</p></div>
+ </div>
+</div></section>
+<section><div class="wrap">
+ <div class="head"><span class="eyebrow">Our experience</span><h2>A reliable partner for education, health and social care</h2></div>
+ <div class="grid g2" style="align-items:start">
+  <div><p>At 3Lance, we have been providing high-quality staffing solutions to the health and social care sector for many years. We take pride in being recognised by our clients as a reputable, reliable and professional recruitment provider.</p><p>Our extensive experience and understanding of the sector enable us to place the right people in the right roles, even at short notice.</p></div>
+  <div><p>As specialist recruiters, we source qualified and experienced professionals for a wide range of healthcare, social care and education settings. Quality, best practice and high professional standards are at the heart of everything we do.</p><p>We are a member of the Recruitment &amp; Employment Confederation (REC).</p></div>
+ </div>
+ <div class="collage"><figure class="big"><img src="img/circle-time.webp" alt="Two nursery staff leading circle time" width="1400" height="935" loading="lazy" decoding="async"></figure><figure><video class="lv" muted loop playsinline preload="metadata" poster="vid/craft-table.jpg" aria-hidden="true"><source src="vid/craft-table.mp4" type="video/mp4"></video></figure><figure><img src="img/beads-craft.webp" alt="A teaching assistant and a girl doing a bead craft" width="933" height="1400" loading="lazy" decoding="async"></figure><figure><img src="img/building-blocks.webp" alt="A girl building with coloured blocks" width="935" height="1400" loading="lazy" decoding="async"></figure><figure><img src="img/play-mat-shapes.webp" alt="A practitioner sorting shapes with children on a play mat" width="935" height="1400" loading="lazy" decoding="async"></figure></div>
+ <div class="cta" style="margin-top:32px"><a class="btn" href="#" data-form="staff">Request Staff</a><a class="btn line" href="#jobs">Find a Job</a></div>
+</div></section>
+</div>
+
+<!-- ================= REVIEWS (menu link appears once real reviews are added) ================= -->
+<div class="page" data-p="reviews" data-t="Reviews"><section><div class="wrap">
+ <div class="head"><span class="eyebrow">Reviews</span><h2>Reviews</h2><p class="intro">What clients and candidates say about working with 3Lance.</p></div>
+ <div class="grid g3" id="revAll"></div>
+ <div class="cta" style="margin-top:28px"><a class="btn" href="#" data-form="review">Leave a review</a></div>
 </div></section></div>
-<div class="page" data-p="news" data-t="News"><section><div class="wrap"><h2>News and advice</h2><div class="ph" style="margin-top:28px"><strong>Articles coming soon.</strong><p style="margin:8px 0 0">Career guides and sector news will appear here.</p></div></div></section></div>
-<div class="page" data-p="faq" data-t="FAQ"><section><div class="wrap"><h2>Frequently asked questions</h2><p class="banner">Draft answers. Items marked NEEDS CONFIRMATION must be completed before launch.</p><div class="faq" id="faqList" style="margin-top:28px"></div><p style="margin-top:24px">Still have a question? <a href="#contact"><b>Contact us</b></a>.</p></div></section></div>
-<div class="page" data-p="careers" data-t="Careers"><section><div class="wrap"><h2>Careers at 3Lance</h2><div class="ph" style="margin-top:28px"><strong>Replace with confirmed information about working at 3Lance.</strong></div><div class="cta" style="margin-top:24px"><a class="btn teal" href="#" data-form="careers">Send your CV</a></div></div></section></div>
-<div class="page" data-p="privacy" data-t="Privacy Policy"><section><div class="wrap prose" id="L_privacy"></div></section></div>
-<div class="page" data-p="cookies" data-t="Cookie Policy"><section><div class="wrap prose" id="L_cookies"></div></section></div>
-<div class="page" data-p="terms" data-t="Terms and Conditions"><section><div class="wrap prose" id="L_terms"></div></section></div>
-<div class="page" data-p="contact" data-t="Contact"><section id="contact"><div class="wrap">
- <h2>Contact 3Lance</h2>
- <p style="margin-top:14px">Whether you are an organisation looking for exceptional staff or a professional searching for your next opportunity, we’d love to hear from you.</p>
- <div class="who"><button data-form="reg">I’m a candidate<small>Register and send your CV</small></button><button data-form="staff">I’m an organisation<small>Request staff</small></button><a href="mailto:alia@3-lance.co.uk">Something else<small>Email our team</small></a></div><div class="ci">
-  <div><b>Business</b>3Lance Recruitment Solutions</div>
+
+<!-- ================= NEWS (not in menu until articles exist) ================= -->
+<div class="page" data-p="news" data-t="News"><section><div class="wrap"><span class="eyebrow">News</span><h2>News and advice</h2><div class="ph" style="margin-top:28px"><strong>Articles coming soon.</strong><p style="margin:8px 0 0">Career guides and sector news will appear here.</p></div></div></section></div>
+
+<!-- ================= FAQ ================= -->
+<div class="page" data-p="faq" data-t="FAQ"><section><div class="wrap" style="max-width:880px">
+ <span class="eyebrow">FAQ</span><h2>Frequently asked questions</h2>
+ <p class="banner">Draft answers. Items marked NEEDS CONFIRMATION must be completed before launch.</p>
+ <div class="faq" id="faqList" style="margin-top:28px"></div>
+ <p style="margin-top:24px">Still have a question? <a href="#contact"><b>Contact us</b></a>.</p>
+</div></section></div>
+
+<!-- ================= CAREERS (not in menu until content is confirmed) ================= -->
+<div class="page" data-p="careers" data-t="Careers"><section><div class="wrap"><span class="eyebrow">Careers</span><h2>Careers at 3Lance</h2><img class="banner-img" src="img/interview.webp" alt="A recruiter smiling during an interview" width="1400" height="788" loading="lazy" decoding="async"><div class="ph" style="margin-top:28px"><strong>Replace with confirmed information about working at 3Lance.</strong></div><div class="cta" style="margin-top:24px"><a class="btn" href="#" data-form="careers">Send your CV</a></div></div></section></div>
+
+<div class="page" data-p="privacy" data-t="Privacy Policy"><section><div class="wrap prose" id="L_privacy" style="max-width:880px"></div></section></div>
+<div class="page" data-p="cookies" data-t="Cookie Policy"><section><div class="wrap prose" id="L_cookies" style="max-width:880px"></div></section></div>
+<div class="page" data-p="terms" data-t="Terms and Conditions"><section><div class="wrap prose" id="L_terms" style="max-width:880px"></div></section></div>
+
+<!-- ================= CONTACT ================= -->
+<div class="page" data-p="contact" data-t="Contact">
+<section id="contact" class="page-head"><div class="wrap split">
+ <div>
+  <span class="eyebrow">Contact</span>
+  <h2>Contact 3Lance</h2>
+  <p class="intro">Whether you are an organisation looking for exceptional staff or a professional searching for your next opportunity, we’d love to hear from you.</p>
+ </div>
+ <figure class="photo"><img src="img/painted-hands.webp" alt="A laughing child showing paint-covered hands beside a nursery practitioner" width="1400" height="933" loading="lazy" decoding="async"></figure>
+</div></section>
+<section><div class="wrap">
+ <div class="pick" style="margin-top:0"><button data-form="reg">I’m a candidate<small>Register and send your CV</small></button><button data-form="staff">I’m an organisation<small>Request staff</small></button><a href="mailto:alia@3-lance.co.uk">Something else<small>Email our team</small></a></div>
+ <div class="ci">
+  <div><b>Business</b><span>3Lance Recruitment Solutions</span></div>
   <div><b>Phone</b><a href="tel:+447450644541">07450 644 541</a></div>
   <div><b>Email</b><a href="mailto:alia@3-lance.co.uk">alia@3-lance.co.uk</a></div>
  </div>
- <div class="cta"><a class="btn" href="#" data-form="staff">Request Staff</a><a class="btn teal" href="#" data-form="reg">Register as a Candidate</a><a class="btn line" style="color:#fff" href="tel:+447450644541">Call us</a><a class="btn or" href="https://wa.me/447450644541" target="_blank" rel="noopener">WhatsApp</a></div>
-</div></section></div>
-<div class="page" data-p="job" data-t="Vacancy"><section><div class="wrap" id="jobdetail"></div></section></div>
+ <div class="cta"><a class="btn" href="tel:+447450644541">Call us</a><a class="btn line" href="https://wa.me/447450644541" target="_blank" rel="noopener">WhatsApp</a></div>
+</div></section>
+</div>
+
+<div class="page" data-p="job" data-t="Vacancy"><section><div class="wrap" id="jobdetail" style="max-width:880px"></div></section></div>
 </main>
-<footer><div class="wrap"><div class="fl"><a href="#privacy">Privacy Policy</a><a href="#cookies">Cookie Policy</a><a href="#terms">Terms and Conditions</a><a href="#faq">FAQ</a><a href="#training">Training</a><a href="#careers">Careers</a><a href="#news">News</a></div>© 3Lance Recruitment Solutions. Health, social care and education recruitment across the UK.</div></footer>
+
+
+<footer>
+ <i class="stripe" aria-hidden="true"></i>
+ <div class="wrap fgrid">
+  <div><a class="logo" href="#home" aria-label="3Lance home"><img src="img/logo.png" alt="3Lance Recruitment Solutions" width="481" height="163" loading="lazy"></a><p style="color:#fff;font-weight:800;margin-top:18px">People. Purpose. Possibilities.</p><p style="margin-top:8px">Specialist recruitment for education, health and social care across the UK. Member of the Recruitment &amp; Employment Confederation.</p></div>
+  <div><h4>Clients</h4><ul><li><a href="#" data-form="staff">Request Staff</a></li><li><a href="#services">Services</a></li><li><a href="#about">About us</a></li><li><a href="#faq">FAQ</a></li></ul></div>
+  <div><h4>Candidates</h4><ul><li><a href="#jobs">Find a Job</a></li><li><a href="#" data-form="reg">Register</a></li><li><a href="#" data-form="cv">Upload CV</a></li><li><a href="#" data-form="refer">Refer a friend</a></li></ul></div>
+  <div><h4>Contact</h4><ul><li><a href="tel:+447450644541">07450 644 541</a></li><li><a href="mailto:alia@3-lance.co.uk">alia@3-lance.co.uk</a></li><li><a href="https://wa.me/447450644541" target="_blank" rel="noopener">WhatsApp</a></li></ul></div>
+ </div>
+ <div class="wrap fbase"><span>© 3Lance Recruitment Solutions<span id="coLine"></span></span><div class="flinks"><a href="#privacy">Privacy Policy</a><a href="#cookies">Cookie Policy</a><a href="#terms">Terms and Conditions</a></div></div>
+</footer>
 
 <a class="btn floatcv" href="#" data-form="cv">Upload CV</a>
 <dialog id="dlg" aria-labelledby="dt">
- <div class="mh"><div><h2 id="dt" style="font-size:1.6rem"></h2><p id="ds" style="margin:6px 0 0;font-size:.95rem"></p></div><button class="x" id="dx" aria-label="Close">×</button></div>
+ <div class="mh"><div><h2 id="dt"></h2><p id="ds" style="margin:6px 0 0;font-size:.95rem"></p></div><button class="x" id="dx" aria-label="Close">×</button></div>
  <form class="f" id="af"></form>
 </dialog>
-
 <script>
 const EMAIL="alia@3-lance.co.uk";
 /* ===== TALLY LINKS: paste each Tally form link between the quotes. While empty, the form opens an email instead. ===== */
@@ -372,7 +794,7 @@ function render(){
  <div class="acts"><a class="btn line" style="color:var(--ink)" href="#job/${esc(j.id)}">Details</a><button class="btn" data-apply="${esc(j.id)}">Apply</button></div></article>`).join("");
 }
 $("#sf").addEventListener("submit",e=>{e.preventDefault();render()});
-$("#reset").onclick=()=>{$("#sf").reset();render()};
+$("#clearSearch").onclick=()=>{$("#q").value="";$("#loc").value="";$("#typ").value="";render();$("#q").focus()};
 render();
 function renderJob(id){
  const j=open.find(x=>x.id===id),el=$("#jobdetail");
@@ -385,7 +807,7 @@ function renderJob(id){
 const rc=r=>`<div class="rev"><div class="st" aria-label="${r.rating} out of 5">${"★".repeat(r.rating)}${"☆".repeat(5-r.rating)}</div><p>${esc(r.text)}</p><div class="who">${esc(r.name)}<small>${esc(r.role||"")}${r.role&&r.type?" · ":""}${esc(r.type||"")}</small></div></div>`;
 const ph=t=>`<div class="ph"><strong>Replace with approved testimonial</strong><p style="margin:8px 0 0">${t}</p></div>`;
 const revs=n=>REVIEWS.length?REVIEWS.slice(0,n).map(rc).join(""):ph("Client review")+ph("Candidate review")+ph("Client review");
-$("#revHome").innerHTML=revs(3);$("#revAll").innerHTML=REVIEWS.length?REVIEWS.map(rc).join(""):revs(3);
+$("#revHome").innerHTML=revs(3);document.querySelectorAll("[data-if-reviews]").forEach(e=>e.hidden=!REVIEWS.length);$("#revAll").innerHTML=REVIEWS.length?REVIEWS.map(rc).join(""):revs(3);
 $("#faqList").innerHTML=FAQS.map(([q,a])=>`<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join("");
 Object.keys(LEGAL).forEach(k=>{$("#L_"+k).innerHTML=`<h2>${LEGAL[k][0]}</h2><p class="banner">Draft for review. Not legal advice. Complete every item marked NEEDS CONFIRMATION before publishing.</p>${LEGAL[k][1]}`});
 /* forms */
@@ -395,8 +817,8 @@ const sel=(n,l,opts)=>`<label>${l}<select name="${n}">${opts.map(o=>`<option>${o
 const RTW=["Yes","No","Prefer to discuss"],PRIV="I have read the privacy information and agree that 3Lance may use these details to contact me about work.";
 const FORMS={
  apply:j=>({t:"Apply for this job",s:j.title+" ("+j.id+")",subj:"Job application: "+j.title+" ["+j.id+"]",fields:[["Full name","name",1,"name"],["Email","email",1,"email","email"],["Phone","phone",1,"tel","tel"],["Location","loc",0],["Relevant experience","exp",1,0,"area"],["Qualifications","qual",0,0,"area"],["Right to work in the UK","rtw",0,0,RTW],["Availability","avail",0],["Message (optional)","msg",0,0,"area"]],cv:1,chk:PRIV}),
- reg:()=>({t:"Register with 3Lance",s:"Register your interest and we will contact you about suitable roles.",subj:"Candidate registration",fields:[["Full name","name",1,"name"],["Email","email",1,"email","email"],["Phone","phone",1,"tel","tel"],["Location","loc",0],["Preferred roles","roles",0],["Sector","sector",0,0,["Health","Mental health","Social care","Education and SEN","Other"]],["Experience","exp",1,0,"area"],["Qualifications","qual",0,0,"area"],["Right to work in the UK","rtw",0,0,RTW],["Availability","avail",0],["Message (optional)","msg",0,0,"area"]],cv:1,chk:PRIV}),
- staff:()=>({t:"Request staff",s:"Tell us what you need. We will contact you to confirm the requirements.",subj:"Staffing enquiry",fields:[["Organisation name","org",1],["Organisation type","orgtype",0,0,["NHS Trust","Mental Health Trust","Independent Fostering Agency","Registered children’s home","Nursing home","School or education provider","Other"]],["Contact name","name",1,"name"],["Job title","jt",0],["Email","email",1,"email","email"],["Phone","phone",1,"tel","tel"],["Location","loc",0],["Organisation website","web",0],["Type of staff required","staff",1],["Number of staff","num",0],["Contract type","ct",0,0,["Temporary","Fixed-term","Permanent"]],["Expected start date","start",0],["Additional information","msg",0,0,"area"]]}),
+ reg:()=>({t:"Register with 3Lance",s:"Register your interest and we will contact you about suitable roles.",subj:"Candidate registration",fields:[["Full name","name",1,"name"],["Email","email",1,"email","email"],["Phone","phone",1,"tel","tel"],["Location","loc",0],["Preferred roles","roles",0],["Sector","sector",0,0,["Education and SEN","Nursery and early years","Healthcare","Mental health","Social care","Other"]],["Experience","exp",1,0,"area"],["Qualifications","qual",0,0,"area"],["Right to work in the UK","rtw",0,0,RTW],["Availability","avail",0],["Message (optional)","msg",0,0,"area"]],cv:1,chk:PRIV}),
+ staff:()=>({t:"Request staff",s:"Tell us what you need. We will contact you to confirm the requirements.",subj:"Staffing enquiry",fields:[["Organisation name","org",1],["Organisation type","orgtype",0,0,["NHS Trust","Mental Health Trust","Independent Fostering Agency","Registered children’s home","Nursing home","School or education provider","Nursery or early years setting","Other"]],["Contact name","name",1,"name"],["Job title","jt",0],["Email","email",1,"email","email"],["Phone","phone",1,"tel","tel"],["Location","loc",0],["Organisation website","web",0],["Type of staff required","staff",1],["Number of staff","num",0],["Contract type","ct",0,0,["Temporary","Fixed-term","Permanent"]],["Expected start date","start",0],["Additional information","msg",0,0,"area"]]}),
  review:()=>({t:"Leave a review",s:"Tell us about your experience with 3Lance.",subj:"Review for 3Lance",fields:[["Your name","name",1,"name"],["Organisation or role","role",0],["You are a","who",0,0,["Client","Candidate"]],["Rating","rating",1,0,["5 stars","4 stars","3 stars","2 stars","1 star"]],["Your review","msg",1,0,"area"]],chk:"I agree that 3Lance may publish my review and name on its website."}),
  refer:()=>({t:"Refer a friend",s:"Know someone looking for health, social care or education work?",subj:"Refer a friend",fields:[["Your name","name",1,"name"],["Your email","email",1,"email","email"],["Friend’s name","fname",1],["Friend’s email or phone","fcontact",1],["Message (optional)","msg",0,0,"area"]],chk:"My friend has agreed that I can share their contact details with 3Lance."}),
  cv:()=>({t:"Upload your CV",s:"Leave your details and we will be in touch.",subj:"CV drop-off",fields:[["Full name","name",1,"name"],["Email","email",1,"email","email"],["Phone","phone",0,"tel","tel"]],cv:1,chk:PRIV}),
@@ -448,7 +870,50 @@ $("#menuBtn").onclick=()=>{const o=$("#nav").classList.toggle("open");$("#menuBt
 
 $("#qf").addEventListener("submit",e=>{e.preventDefault();const d=new FormData(e.target);if(TALLY.cv){openForm("cv");return}show("cv");af.elements.name.value=d.get("name");af.elements.email.value=d.get("email")});
 
+/* looping videos: play only while on screen, never with reduced motion */
+(()=>{const rm=matchMedia("(prefers-reduced-motion: reduce)");const io=new IntersectionObserver(es=>es.forEach(e=>{const v=e.target;if(e.isIntersecting&&!rm.matches)v.play().catch(()=>{});else v.pause()}),{threshold:.15});$$("video.lv").forEach(v=>{v.muted=true;io.observe(v)})})();
+/* ===== CLIENTS: organisations 3Lance has worked with. Add one line each. logo = image file in the img folder ("" shows initials). Check each organisation is happy to be named. ===== */
+const CLIENTS=[
+ {name:"The Log Cabin Charity",type:"Charity, Ealing",logo:""},
+ {name:"Ealing Council",type:"Local authority",logo:""},
+ {name:"Hillingdon Council",type:"Local authority",logo:""}
+];
+/* ===== COMPANY DETAILS: UK companies must show these on their website. Fill in and they appear in the footer. ===== */
+const COMPANY={registeredName:"",companyNumber:"",registeredOffice:""};
+/* Preview only: shows clearly marked template testimonial cards while REVIEWS is empty. Keep false on the live site. */
+const SHOW_REVIEW_TEMPLATES=/*TPL*/false;
+const initials=n=>n.replace(/^The\s+/i,"").split(/\s+/).map(w=>w[0]).join("").slice(0,3).toUpperCase();
+$("#clientList").innerHTML=CLIENTS.map(c=>`<li><div class="acc"><span class="mk">${c.logo?`<img src="img/${esc(c.logo)}" alt="">`:esc(initials(c.name))}</span><span><b>${esc(c.name)}</b><small>${esc(c.type||"")}</small></span></div></li>`).join("");
+if(COMPANY.registeredName||COMPANY.companyNumber){$("#coLine").textContent=" · "+[COMPANY.registeredName,COMPANY.companyNumber&&("Company number "+COMPANY.companyNumber),COMPANY.registeredOffice&&("Registered office: "+COMPANY.registeredOffice)].filter(Boolean).join(" · ")}
+(()=>{const tpl=t=>`<div class="rev tpl"><span class="tpl-tag">Template · replace before launch</span><div class="st" aria-hidden="true">★★★★★</div><p>[${t==="Client"?"An approved quote from a client organisation, for example how quickly 3Lance filled a role or the quality of the staff supplied":"An approved quote from a candidate, for example how 3Lance supported them into a new role"}]</p><div class="who">[Name]<small>[${t==="Client"?"Job title, organisation":"Role, location"}]</small></div></div>`;
+ const col=t=>{const r=REVIEWS.filter(x=>x.type===t);return r.length?r.slice(0,3).map(rc).join(""):(SHOW_REVIEW_TEMPLATES?tpl(t)+tpl(t):"")};
+ const c=col("Client"),d=col("Candidate");$("#tClients").innerHTML=c;$("#tCands").innerHTML=d;
+ $("#tClientsWrap").hidden=!c;$("#tCandsWrap").hidden=!d;$("#tInvite").hidden=!!(c||d);$(".testi").hidden=!(c||d)})();
+
+/* ===== ACCREDITATIONS: add each new accreditation as one line.
+   name = short name, full = one-line description, logo = image file in the img folder ("" shows the short name instead), url = official website ("" for no link). ===== */
+const ACCREDITATIONS=[
+ {name:"REC",full:"Member of the Recruitment & Employment Confederation",logo:"",url:"https://www.rec.uk.com/"}
+];
+$("#accList").innerHTML=ACCREDITATIONS.map(a=>{const inner=`<span class="mk">${a.logo?`<img src="img/${esc(a.logo)}" alt="">`:esc(a.name)}</span><span><b>${esc(a.name)}</b><small>${esc(a.full)}</small></span>`;return `<li>${a.url?`<a class="acc" href="${esc(a.url)}" target="_blank" rel="noopener">${inner}</a>`:`<div class="acc">${inner}</div>`}</li>`}).join("");
+
+/* mobile menu: closes on any choice, on Escape, and when the screen widens */
+(()=>{const nav=$("#nav"),btn=$("#menuBtn"),lab=btn.querySelector("span");
+ const set=o=>{nav.classList.toggle("open",o);btn.setAttribute("aria-expanded",o);if(lab)lab.textContent=o?"Close":"Menu";document.documentElement.classList.toggle("menu-open",o)};
+ btn.onclick=e=>{e.stopPropagation();set(!nav.classList.contains("open"))};
+ nav.addEventListener("click",e=>{if(e.target.closest("a,button"))set(false)});
+ addEventListener("keydown",e=>{if(e.key==="Escape")set(false)});
+ addEventListener("hashchange",()=>set(false));
+ matchMedia("(min-width:1021px)").addEventListener("change",e=>{if(e.matches)set(false)})})();
+/* floating Upload CV button: hidden while the top banner is on screen */
+(()=>{const fc=$(".floatcv"),hero=$(".hero"),home=$('.page[data-p="home"]');let heroIn=true;
+ let footIn=false;const upd=()=>fc.classList.toggle("show",!(home.classList.contains("on")&&heroIn)&&!footIn);
+ new IntersectionObserver(([e])=>{heroIn=e.isIntersecting;upd()}).observe(hero);new IntersectionObserver(([e])=>{footIn=e.isIntersecting;upd()}).observe($("footer"));addEventListener("hashchange",()=>setTimeout(upd,0));upd()})();
+/* highlight the current menu item */
+(()=>{const mark=()=>{const p=$(".page.on");const k=p?p.dataset.p:"";$$("#nav .links a").forEach(a=>{const t=a.getAttribute("href").slice(1);(t===k||(k.startsWith("svc-")&&t==="services")||(k==="job"&&t==="candidates"))?a.setAttribute("aria-current","page"):a.removeAttribute("aria-current")})};addEventListener("hashchange",()=>setTimeout(mark,0));mark()})();
 loadSheet();
 </script>
+
+
 </body>
 </html>
